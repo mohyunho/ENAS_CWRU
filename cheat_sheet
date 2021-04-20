@@ -1,0 +1,5 @@
+source SN_P/bin/activate
+
+
+python3 fault_diagnostics.py -i 48 -l 400 --dim_method non --epochs 1000 --cross no --plotting no
+
