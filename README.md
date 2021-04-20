@@ -48,7 +48,7 @@ python3 fault_diagnostics.py -h
 
 - Data files are automatically downloaded at the first time
 - 9/10 of data used for train and 1/10 for test (There is no original training & test split on CWRU). 
-- the number of output classes is 10.
+- the number of output classes is 10 (one normal and 9 different faults).
 - If cross validation is validated, the network evaluated 10 times and the results(accuracy) are averaged.
 - please check this [article](https://www.sciencedirect.com/science/article/pii/S1474034616301148) for the data description 
 
