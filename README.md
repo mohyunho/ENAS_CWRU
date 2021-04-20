@@ -59,7 +59,6 @@ python3 fault_diagnostics.py -i 48 -l 400 --dim_method non --epochs 1000 --cross
 
 Output print
 ```bash
-accuracy of data_hp_3:  0.8578431372549019
 accuracies:  [0.9180999180999181, 0.8, 0.8578431372549019]
 avg accuracy:  0.8586476851182733
 ```
