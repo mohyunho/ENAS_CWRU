@@ -31,7 +31,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 from pyts.approximation import SymbolicFourierApproximation
-from sklearn import preprocessing
+
 
 import matplotlib.pyplot as plt
 

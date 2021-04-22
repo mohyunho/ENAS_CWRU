@@ -98,7 +98,7 @@ class network_fit(object):
 
         self.mlps = gen_net(self.train_samples.shape[1], self.n_hidden1, self.n_hidden2)
 
-    def train_net(self, epochs=1000, batch_size=500, lr=1e-05, plotting=True):
+    def train_net(self, epochs=500, batch_size=500, lr=1e-05, plotting=True):
         '''
         specify the optimizers and train the network
         :param epochs:
@@ -117,47 +117,53 @@ class network_fit(object):
 
         keras_rmse = tf.keras.metrics.RootMeanSquaredError()
         self.mlps.compile(loss='categorical_crossentropy', optimizer=adam,  metrics=["accuracy"])
-
-
-        print(self.mlps.summary())
-
-        print ("self.train_samples.shape", self.train_samples.shape)
-        print ("self.label_array_train.shape", self.label_array_train.shape)
+        # print(self.mlps.summary())
+        # print ("self.train_samples.shape", self.train_samples.shape)
+        # print ("self.label_array_train.shape", self.label_array_train.shape)
 
         # Train the model
         history = self.mlps.fit(self.train_samples, self.label_array_train, epochs=epochs, batch_size=batch_size,
-                                validation_split=0.2, verbose=self.verbose,
+                                validation_split=0.3, verbose=0,
                                 callbacks=[lr_scheduler,
-                                    EarlyStopping(monitor='val_loss', min_delta=0, patience=100,
-                                                  verbose=self.verbose, mode='min'),
+                                    EarlyStopping(monitor='val_loss', min_delta=0, patience=50,
+                                                  verbose=0, mode='min'),
                                     ModelCheckpoint(self.model_path, monitor='val_loss',
                                                     save_best_only=True, mode='min',
-                                                    verbose=self.verbose)])
+                                                    verbose=0)])
 
-        print(history.history.keys())
-        # val_rmse_k = history.history['val_root_mean_squared_error']
-        # val_rmse_min = min(val_rmse_k)
-        # min_val_rmse_idx = val_rmse_k.index(min(val_rmse_k))
-        # stop_epoch = min_val_rmse_idx + 1
-        # val_rmse_min = round(val_rmse_min, 4)
-        # print("val_rmse_min: ", val_rmse_min)
+        # print(history.history.keys())
+        val_rmse_k = history.history['val_loss']
+        val_rmse_min = min(val_rmse_k)
+        min_val_rmse_idx = val_rmse_k.index(min(val_rmse_k))
+        stop_epoch = min_val_rmse_idx + 1
+        val_loss_min = round(val_rmse_min, 4)
+        print("val_loss_min: ", val_loss_min)
+
+        val_acc_k = history.history['val_accuracy']
+        val_acc_max = val_acc_k[min_val_rmse_idx]
+        val_acc_max = round(val_acc_max, 4)
+        print("val_acc_max: ", val_acc_max)
+
+        fitness_net = (val_loss_min,)
 
         trained_net = self.mlps
 
         ## Plot training & validation loss about epochs
-        if plotting == True:
-            # summarize history for Loss
-            fig_acc = plt.figure(figsize=(10, 10))
-            plt.plot(history.history['loss'])
-            plt.plot(history.history['val_loss'])
-            plt.title('model loss')
-            plt.ylabel('loss')
-            # plt.ylim(0, 2000)
-            plt.xlabel('epoch')
-            plt.legend(['train', 'test'], loc='upper left')
-            plt.show()
+        # if plotting == True:
+        #     # summarize history for Loss
+        #     fig_acc = plt.figure(figsize=(10, 10))
+        #     plt.plot(history.history['loss'])
+        #     plt.plot(history.history['val_loss'])
+        #     plt.title('model loss')
+        #     plt.ylabel('loss')
+        #     # plt.ylim(0, 2000)
+        #     plt.xlabel('epoch')
+        #     plt.legend(['train', 'test'], loc='upper left')
+        #     plt.show()
 
-        return trained_net
+        fitness_net
+
+        return trained_net, fitness_net
 
     def test_net(self, trained_net=None, best_model=True, plotting=True):
         '''
