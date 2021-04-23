@@ -197,7 +197,7 @@ def main():
             mlps_net = network_fit(train_samples, label_array_train, test_samples, label_array_test,
                                    model_path=model_path, n_hidden1=n_hidden1, n_hidden2=n_hidden2, verbose=verbose)
 
-            trained_net = mlps_net.train_net(epochs=epochs, batch_size=batch, plotting=plotting)
+            trained_net, fitness_net= mlps_net.train_net(epochs=epochs, batch_size=batch, plotting=plotting)
             acc = mlps_net.test_net(trained_net)
 
             print ("accuracy of data_hp_%s: " %(idx+1), acc )
@@ -233,7 +233,7 @@ def main():
                 mlps_net = network_fit(train_samples, label_array_train, test_samples, label_array_test,
                                        model_path=model_path, n_hidden1=n_hidden1, n_hidden2=n_hidden2, verbose=verbose)
 
-                trained_net = mlps_net.train_net(epochs=epochs, batch_size=batch, plotting= plotting)
+                trained_net, fitness_net = mlps_net.train_net(epochs=epochs, batch_size=batch, plotting= plotting)
                 acc = mlps_net.test_net(trained_net)
 
                 print("accuracy of data_hp_%s: " %(idx+1), acc)

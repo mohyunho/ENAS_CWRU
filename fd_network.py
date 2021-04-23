@@ -125,7 +125,7 @@ class network_fit(object):
         history = self.mlps.fit(self.train_samples, self.label_array_train, epochs=epochs, batch_size=batch_size,
                                 validation_split=0.3, verbose=0,
                                 callbacks=[lr_scheduler,
-                                    EarlyStopping(monitor='val_loss', min_delta=0, patience=50,
+                                    EarlyStopping(monitor='val_loss', min_delta=0, patience=100,
                                                   verbose=0, mode='min'),
                                     ModelCheckpoint(self.model_path, monitor='val_loss',
                                                     save_best_only=True, mode='min',

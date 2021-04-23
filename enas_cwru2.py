@@ -42,7 +42,7 @@ jobs = 1
 
 def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(current_dir, 'temp_net.h5')
+    model_path = os.path.join(current_dir, 'temp_net2.h5')
 
     ealog_folder = os.path.join(current_dir, 'EA_log')
     if not os.path.exists(ealog_folder):
