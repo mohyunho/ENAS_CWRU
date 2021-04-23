@@ -8,5 +8,5 @@
 #PBS -q common_cpuQ
 source ~/home/hyunhomo/sn_p/bin/activate
 cd ~/home/hyunhomo/ENAS_CWRU/
-python3 enas_cwru.py -i 48 -l 400 --hp 1 --dim_method sfa --pop 30 --gen 30
+python3 enas_cwru2.py -i 48 -l 400 --hp 1 --dim_method sfa --pop 30 --gen 30
 
