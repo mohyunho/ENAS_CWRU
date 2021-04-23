@@ -236,14 +236,14 @@ def main():
             pass
         elif dim_method == 'sfa':
             train_samples, test_samples = dim.sfa(train_vec_samples=train_samples, test_vec_samples=test_samples,
-                                                  n_components=hof[0][0], n_bins=25, alphabet='ordinal')
+                                                  n_components=hof[0][0]*10, n_bins=25, alphabet='ordinal')
         elif dim_method == 'pca':
             train_samples, test_samples = dim.pca(train_vec_samples=train_samples, test_vec_samples=test_samples,
-                                                  n_components=hof[0][0])
+                                                  n_components=hof[0][0]*10)
 
 
         mlps_net = network_fit(train_samples, label_array_train, test_samples, label_array_test,
-                               model_path=model_path, n_hidden1=hof[0][1], n_hidden2=hof[0][2], verbose=verbose)
+                               model_path=model_path, n_hidden1=hof[0][1]*10, n_hidden2=hof[0][2]*10, verbose=verbose)
 
         trained_net = mlps_net.train_net(epochs=epochs, batch_size=batch, plotting=plotting)
         acc = mlps_net.test_net(trained_net)
