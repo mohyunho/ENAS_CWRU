@@ -1,1259 +1,1676 @@
-2021-04-23 11:22:35.921305: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory
-2021-04-23 11:22:35.921442: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory
-2021-04-23 11:22:35.921456: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-2021-04-23 11:22:57.979019: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
-2021-04-23 11:22:57.979074: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
-2021-04-23 11:22:57.979104: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (hpc-c02-node05.unitn.it): /proc/driver/nvidia/version does not exist
-2021-04-23 11:22:57.979419: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
-2021-04-23 11:22:57.988947: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399885000 Hz
-2021-04-23 11:22:57.990102: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5570a84b5c70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2021-04-23 11:22:57.990130: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-23 16:57:06.883556: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory
+2021-04-23 16:57:06.883696: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory
+2021-04-23 16:57:06.883710: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-04-23 16:57:24.465993: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-04-23 16:57:24.466045: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2021-04-23 16:57:24.466079: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (hpc-c02-node05.unitn.it): /proc/driver/nvidia/version does not exist
+2021-04-23 16:57:24.466299: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-04-23 16:57:24.474880: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399885000 Hz
+2021-04-23 16:57:24.476008: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ae0ed50b60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-23 16:57:24.476037: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
 2.1.0
-genotype [19, 30, 50]
+genotype [19, 23, 8]
 Initializing network...
-val_loss_min:  0.1378
+val_loss_min:  0.1257
+val_acc_max:  0.9628
+genotype [30, 27, 27]
+Initializing network...
+val_loss_min:  0.145
+val_acc_max:  0.9583
+genotype [17, 6, 17]
+Initializing network...
+val_loss_min:  0.2099
+val_acc_max:  0.936
+genotype [3, 29, 39]
+Initializing network...
+val_loss_min:  0.1331
 val_acc_max:  0.9604
-genotype [8, 24, 15]
+genotype [6, 24, 3]
 Initializing network...
-val_loss_min:  0.1274
-val_acc_max:  0.9625
-genotype [20, 13, 8]
-Initializing network...
-val_loss_min:  0.1671
-val_acc_max:  0.9491
-genotype [2, 10, 32]
-Initializing network...
-val_loss_min:  0.1691
-val_acc_max:  0.947
-genotype [30, 25, 22]
-Initializing network...
-val_loss_min:  0.1365
-val_acc_max:  0.9616
-genotype [21, 24, 46]
+val_loss_min:  0.1473
+val_acc_max:  0.9564
+genotype [19, 24, 28]
 Initializing network...
 val_loss_min:  0.1358
 val_acc_max:  0.961
-genotype [22, 22, 32]
+genotype [21, 31, 38]
 Initializing network...
-val_loss_min:  0.1338
-val_acc_max:  0.9586
-genotype [15, 34, 18]
-Initializing network...
-val_loss_min:  0.1215
-val_acc_max:  0.9625
-genotype [19, 4, 49]
-Initializing network...
-val_loss_min:  0.3339
-val_acc_max:  0.8949
-genotype [1, 38, 15]
-Initializing network...
-val_loss_min:  0.1337
-val_acc_max:  0.9595
-genotype [10, 9, 34]
-Initializing network...
-val_loss_min:  0.1683
-val_acc_max:  0.95
-genotype [15, 16, 37]
-Initializing network...
-val_loss_min:  0.1309
-val_acc_max:  0.9619
-genotype [26, 26, 27]
-Initializing network...
-val_loss_min:  0.143
-val_acc_max:  0.9573
-genotype [25, 39, 2]
-Initializing network...
-val_loss_min:  0.136
-val_acc_max:  0.9607
-genotype [2, 16, 27]
-Initializing network...
-val_loss_min:  0.1491
-val_acc_max:  0.9534
-genotype [25, 47, 41]
-Initializing network...
-val_loss_min:  0.1336
+val_loss_min:  0.1233
 val_acc_max:  0.9616
-genotype [27, 5, 46]
-Initializing network...
-val_loss_min:  0.268
-val_acc_max:  0.9269
-genotype [23, 35, 6]
-Initializing network...
-val_loss_min:  0.1264
-val_acc_max:  0.961
-genotype [28, 6, 35]
-Initializing network...
-val_loss_min:  0.2154
-val_acc_max:  0.9366
-genotype [30, 48, 46]
-Initializing network...
-val_loss_min:  0.1296
-val_acc_max:  0.9634
-genotype [24, 17, 38]
-Initializing network...
-val_loss_min:  0.1441
-val_acc_max:  0.9552
-genotype [13, 44, 46]
-Initializing network...
-val_loss_min:  0.1323
-val_acc_max:  0.961
-genotype [9, 34, 4]
-Initializing network...
-val_loss_min:  0.1333
-val_acc_max:  0.9589
-genotype [15, 45, 20]
-Initializing network...
-val_loss_min:  0.1408
-val_acc_max:  0.9604
-genotype [28, 33, 28]
-Initializing network...
-val_loss_min:  0.1361
-val_acc_max:  0.9604
-genotype [29, 30, 34]
-Initializing network...
-val_loss_min:  0.1324
-val_acc_max:  0.9607
-genotype [4, 7, 17]
-Initializing network...
-val_loss_min:  0.1949
-val_acc_max:  0.9403
-genotype [23, 50, 5]
-Initializing network...
-val_loss_min:  0.1237
-val_acc_max:  0.9628
-genotype [17, 8, 37]
-Initializing network...
-val_loss_min:  0.174
-val_acc_max:  0.9439
-genotype [12, 32, 45]
-Initializing network...
-val_loss_min:  0.1388
-val_acc_max:  0.9598
-gen	nevals	avg    	std      	min   	max   
-0  	30    	0.15491	0.0451477	0.1215	0.3339
-genotype [23, 35, 15]
-Initializing network...
-val_loss_min:  0.1334
-val_acc_max:  0.9607
-genotype [8, 23, 6]
-Initializing network...
-val_loss_min:  0.1316
-val_acc_max:  0.9592
-genotype [30, 16, 37]
-Initializing network...
-val_loss_min:  0.1564
-val_acc_max:  0.9561
-genotype [21, 48, 46]
-Initializing network...
-val_loss_min:  0.1372
-val_acc_max:  0.9616
-genotype [8, 4, 39]
-Initializing network...
-val_loss_min:  0.3585
-val_acc_max:  0.8921
-genotype [9, 47, 41]
-Initializing network...
-val_loss_min:  0.129
-val_acc_max:  0.9619
-genotype [25, 34, 4]
-Initializing network...
-val_loss_min:  0.1372
-val_acc_max:  0.9586
-genotype [25, 4, 26]
-Initializing network...
-val_loss_min:  0.3144
-val_acc_max:  0.9104
-genotype [22, 32, 15]
-Initializing network...
-val_loss_min:  0.1351
-val_acc_max:  0.9598
-genotype [28, 33, 22]
-Initializing network...
-val_loss_min:  0.1274
-val_acc_max:  0.9628
-genotype [29, 25, 28]
-Initializing network...
-val_loss_min:  0.1456
-val_acc_max:  0.957
-genotype [30, 11, 15]
-Initializing network...
-val_loss_min:  0.1518
-val_acc_max:  0.9516
-genotype [24, 16, 27]
-Initializing network...
-val_loss_min:  0.1488
-val_acc_max:  0.9537
-genotype [2, 17, 38]
-Initializing network...
-val_loss_min:  0.1642
-val_acc_max:  0.9509
-genotype [20, 9, 34]
-Initializing network...
-val_loss_min:  0.1662
-val_acc_max:  0.95
-genotype [10, 26, 8]
-Initializing network...
-val_loss_min:  0.1251
-val_acc_max:  0.9613
-genotype [2, 10, 37]
-Initializing network...
-val_loss_min:  0.1698
-val_acc_max:  0.9464
-genotype [17, 8, 32]
-Initializing network...
-val_loss_min:  0.1739
-val_acc_max:  0.9488
-genotype [27, 12, 3]
-Initializing network...
-val_loss_min:  0.18
-val_acc_max:  0.9464
-genotype [19, 36, 49]
-Initializing network...
-val_loss_min:  0.1334
-val_acc_max:  0.9592
-population saved
-population [[15, 34, 18], [23, 50, 5], [23, 35, 15], [8, 23, 6], [30, 25, 22], [21, 24, 46], [22, 22, 32], [15, 34, 18], [9, 47, 41], [1, 38, 15], [10, 9, 34], [15, 16, 37], [21, 24, 46], [25, 39, 2], [28, 33, 22], [25, 47, 41], [19, 30, 50], [23, 35, 6], [15, 45, 20], [30, 48, 46], [24, 17, 38], [13, 44, 46], [9, 34, 4], [10, 26, 8], [28, 33, 28], [29, 30, 34], [4, 7, 17], [23, 50, 5], [17, 8, 37], [19, 36, 49]]
-[0.1215, 0.1237, 0.1334, 0.1316, 0.1365, 0.1358, 0.1338, 0.1215, 0.129, 0.1337, 0.1683, 0.1309, 0.1358, 0.136, 0.1274, 0.1336, 0.1378, 0.1264, 0.1408, 0.1296, 0.1441, 0.1323, 0.1333, 0.1251, 0.1361, 0.1324, 0.1949, 0.1237, 0.174, 0.1334]
-min: 0.1215, max:0.1949, avg:0.13654666666666665
-1  	20    	0.136547	0.0155418	0.1215	0.1949
-genotype [23, 21, 5]
-Initializing network...
-val_loss_min:  0.1417
-val_acc_max:  0.9555
-genotype [23, 48, 5]
-Initializing network...
-val_loss_min:  0.1191
-val_acc_max:  0.9619
-genotype [10, 35, 6]
-Initializing network...
-val_loss_min:  0.14
-val_acc_max:  0.9595
-genotype [23, 26, 8]
-Initializing network...
-val_loss_min:  0.1336
-val_acc_max:  0.9598
-genotype [30, 16, 10]
-Initializing network...
-val_loss_min:  0.1428
-val_acc_max:  0.9552
-genotype [8, 23, 46]
-Initializing network...
-val_loss_min:  0.1433
-val_acc_max:  0.9589
-genotype [13, 44, 6]
-Initializing network...
-val_loss_min:  0.1346
-val_acc_max:  0.9613
-genotype [9, 9, 17]
-Initializing network...
-val_loss_min:  0.1512
-val_acc_max:  0.954
-genotype [30, 25, 15]
-Initializing network...
-val_loss_min:  0.1476
-val_acc_max:  0.9589
-genotype [1, 25, 15]
-Initializing network...
-val_loss_min:  0.1214
-val_acc_max:  0.9647
-genotype [22, 22, 46]
-Initializing network...
-val_loss_min:  0.1448
-val_acc_max:  0.9592
-genotype [21, 24, 32]
-Initializing network...
-val_loss_min:  0.1396
-val_acc_max:  0.9586
-genotype [21, 46, 41]
-Initializing network...
-val_loss_min:  0.136
-val_acc_max:  0.9601
-genotype [30, 25, 46]
-Initializing network...
-val_loss_min:  0.1374
-val_acc_max:  0.9607
-genotype [28, 33, 50]
-Initializing network...
-val_loss_min:  0.133
-val_acc_max:  0.9601
-genotype [17, 8, 17]
-Initializing network...
-val_loss_min:  0.1776
-val_acc_max:  0.9461
-genotype [4, 7, 37]
-Initializing network...
-val_loss_min:  0.1974
-val_acc_max:  0.9403
-population saved
-population [[15, 34, 18], [15, 34, 18], [23, 35, 15], [23, 48, 5], [30, 25, 22], [23, 26, 8], [28, 33, 22], [15, 34, 18], [9, 47, 41], [1, 38, 15], [8, 23, 46], [15, 16, 37], [29, 30, 34], [25, 39, 2], [28, 33, 22], [19, 36, 49], [25, 47, 41], [1, 25, 15], [15, 45, 20], [30, 48, 46], [21, 46, 41], [13, 44, 46], [9, 34, 4], [10, 26, 8], [28, 33, 50], [29, 30, 34], [24, 17, 38], [23, 50, 5], [17, 8, 37], [19, 36, 49]]
-[0.1215, 0.1215, 0.1334, 0.1191, 0.1365, 0.1336, 0.1274, 0.1215, 0.129, 0.1337, 0.1433, 0.1309, 0.1324, 0.136, 0.1274, 0.1334, 0.1336, 0.1214, 0.1408, 0.1296, 0.136, 0.1323, 0.1333, 0.1251, 0.133, 0.1324, 0.1441, 0.1237, 0.174, 0.1334]
-min: 0.1191, max:0.174, avg:0.13244333333333333
-2  	17    	0.132443	0.00993847	0.1191	0.174 
-genotype [15, 29, 5]
-Initializing network...
-val_loss_min:  0.1319
-val_acc_max:  0.9616
-genotype [1, 30, 18]
-Initializing network...
-val_loss_min:  0.1306
-val_acc_max:  0.9644
-genotype [28, 35, 41]
-Initializing network...
-val_loss_min:  0.1372
-val_acc_max:  0.9583
-genotype [9, 47, 22]
-Initializing network...
-val_loss_min:  0.1245
-val_acc_max:  0.9665
-genotype [13, 30, 34]
-Initializing network...
-val_loss_min:  0.1352
-val_acc_max:  0.9601
-genotype [3, 45, 46]
-Initializing network...
-val_loss_min:  0.1322
-val_acc_max:  0.9592
-genotype [29, 30, 50]
-Initializing network...
-val_loss_min:  0.1428
-val_acc_max:  0.9576
-genotype [28, 33, 34]
-Initializing network...
-val_loss_min:  0.1355
-val_acc_max:  0.961
-genotype [9, 34, 15]
-Initializing network...
-val_loss_min:  0.1384
-val_acc_max:  0.9607
-genotype [23, 35, 4]
-Initializing network...
-val_loss_min:  0.1232
-val_acc_max:  0.961
-genotype [28, 47, 41]
-Initializing network...
-val_loss_min:  0.1352
-val_acc_max:  0.9604
-genotype [21, 46, 22]
-Initializing network...
-val_loss_min:  0.1352
-val_acc_max:  0.9631
-genotype [30, 25, 41]
-Initializing network...
-val_loss_min:  0.1407
-val_acc_max:  0.9601
-genotype [15, 23, 46]
-Initializing network...
-val_loss_min:  0.1431
-val_acc_max:  0.9561
-genotype [8, 45, 20]
-Initializing network...
-val_loss_min:  0.1251
-val_acc_max:  0.9637
-population saved
-population [[23, 48, 5], [15, 34, 18], [15, 34, 18], [23, 48, 5], [15, 29, 5], [1, 30, 18], [10, 26, 8], [15, 34, 18], [9, 47, 41], [9, 47, 22], [30, 48, 46], [15, 16, 37], [29, 30, 34], [3, 45, 46], [28, 33, 22], [19, 36, 49], [25, 47, 41], [1, 25, 15], [15, 45, 20], [30, 48, 46], [23, 26, 8], [13, 44, 46], [9, 34, 4], [10, 26, 8], [28, 33, 50], [29, 30, 34], [15, 23, 46], [23, 50, 5], [24, 17, 38], [19, 36, 49]]
-[0.1191, 0.1215, 0.1215, 0.1191, 0.1319, 0.1306, 0.1251, 0.1215, 0.129, 0.1245, 0.1296, 0.1309, 0.1324, 0.1322, 0.1274, 0.1334, 0.1336, 0.1214, 0.1408, 0.1296, 0.1336, 0.1323, 0.1333, 0.1251, 0.133, 0.1324, 0.1431, 0.1237, 0.1441, 0.1334]
-min: 0.1191, max:0.1441, avg:0.12963666666666665
-3  	15    	0.129637	0.00641049	0.1191	0.1441
-genotype [30, 48, 5]
-Initializing network...
-val_loss_min:  0.125
-val_acc_max:  0.9628
-genotype [1, 25, 18]
+genotype [24, 16, 12]
+Initializing network...
+val_loss_min:  0.1499
+val_acc_max:  0.9564
+genotype [11, 19, 41]
 Initializing network...
 val_loss_min:  0.1507
-val_acc_max:  0.9589
-genotype [15, 7, 15]
+val_acc_max:  0.9546
+genotype [5, 38, 34]
 Initializing network...
-val_loss_min:  0.1892
-val_acc_max:  0.9436
-genotype [23, 50, 33]
-Initializing network...
-val_loss_min:  0.1312
-val_acc_max:  0.9637
-genotype [30, 47, 22]
-Initializing network...
-val_loss_min:  0.1251
-val_acc_max:  0.9644
-genotype [9, 33, 22]
-Initializing network...
-val_loss_min:  0.1251
-val_acc_max:  0.9625
-genotype [1, 16, 37]
-Initializing network...
-val_loss_min:  0.1485
-val_acc_max:  0.954
-genotype [15, 30, 18]
-Initializing network...
-val_loss_min:  0.1297
-val_acc_max:  0.9619
-genotype [13, 44, 34]
-Initializing network...
-val_loss_min:  0.1352
-val_acc_max:  0.9586
-genotype [29, 30, 46]
-Initializing network...
-val_loss_min:  0.1351
-val_acc_max:  0.9616
-genotype [29, 33, 40]
-Initializing network...
-val_loss_min:  0.1322
+val_loss_min:  0.1286
 val_acc_max:  0.9595
-genotype [28, 30, 34]
+genotype [10, 22, 37]
 Initializing network...
-val_loss_min:  0.1298
-val_acc_max:  0.9598
-genotype [9, 34, 49]
+val_loss_min:  0.1474
+val_acc_max:  0.954
+genotype [2, 15, 23]
 Initializing network...
-val_loss_min:  0.1281
-val_acc_max:  0.9589
-genotype [13, 39, 4]
+val_loss_min:  0.1364
+val_acc_max:  0.958
+genotype [4, 22, 14]
 Initializing network...
-val_loss_min:  0.1295
-val_acc_max:  0.9634
-genotype [19, 3, 49]
-Initializing network...
-val_loss_min:  0.5396
-val_acc_max:  0.8458
-genotype [21, 26, 8]
-Initializing network...
-val_loss_min:  0.1359
-val_acc_max:  0.9576
-genotype [15, 23, 38]
-Initializing network...
-val_loss_min:  0.1398
-val_acc_max:  0.9564
-genotype [24, 17, 46]
-Initializing network...
-val_loss_min:  0.1287
-val_acc_max:  0.9622
-population saved
-population [[23, 48, 5], [23, 48, 5], [15, 34, 18], [23, 48, 5], [15, 34, 18], [15, 34, 18], [10, 26, 8], [15, 34, 18], [10, 26, 8], [9, 47, 22], [30, 48, 46], [9, 33, 22], [30, 48, 46], [30, 48, 46], [28, 33, 22], [15, 30, 18], [15, 29, 5], [1, 25, 15], [13, 44, 34], [30, 48, 46], [29, 33, 40], [28, 30, 34], [9, 34, 49], [10, 26, 8], [28, 33, 50], [29, 30, 34], [21, 26, 8], [23, 50, 5], [15, 23, 38], [24, 17, 46]]
-[0.1191, 0.1191, 0.1215, 0.1191, 0.1215, 0.1215, 0.1251, 0.1215, 0.1251, 0.1245, 0.1296, 0.1251, 0.1296, 0.1296, 0.1274, 0.1297, 0.1319, 0.1214, 0.1352, 0.1296, 0.1322, 0.1298, 0.1281, 0.1251, 0.133, 0.1324, 0.1359, 0.1237, 0.1398, 0.1287]
-min: 0.1191, max:0.1398, avg:0.12719333333333332
-4  	18    	0.127193	0.00530088	0.1191	0.1398
-genotype [23, 48, 34]
-Initializing network...
-val_loss_min:  0.1347
-val_acc_max:  0.9619
-genotype [23, 48, 15]
-Initializing network...
-val_loss_min:  0.1293
-val_acc_max:  0.965
-genotype [1, 25, 26]
-Initializing network...
-val_loss_min:  0.1466
-val_acc_max:  0.9576
-genotype [30, 34, 18]
-Initializing network...
-val_loss_min:  0.1337
-val_acc_max:  0.965
-genotype [23, 47, 22]
-Initializing network...
-val_loss_min:  0.1323
-val_acc_max:  0.9619
-genotype [8, 50, 41]
-Initializing network...
-val_loss_min:  0.1239
-val_acc_max:  0.9631
-genotype [30, 12, 8]
-Initializing network...
-val_loss_min:  0.1616
-val_acc_max:  0.9534
-genotype [30, 48, 30]
-Initializing network...
-val_loss_min:  0.1328
-val_acc_max:  0.9625
-genotype [30, 48, 43]
-Initializing network...
-val_loss_min:  0.139
-val_acc_max:  0.9601
-genotype [25, 30, 18]
-Initializing network...
-val_loss_min:  0.1472
-val_acc_max:  0.957
-genotype [15, 48, 46]
-Initializing network...
-val_loss_min:  0.1329
-val_acc_max:  0.9598
-genotype [28, 30, 46]
-Initializing network...
-val_loss_min:  0.1349
-val_acc_max:  0.9583
-genotype [29, 38, 47]
-Initializing network...
-val_loss_min:  0.1311
-val_acc_max:  0.9619
-genotype [29, 30, 40]
-Initializing network...
-val_loss_min:  0.1277
-val_acc_max:  0.9647
-genotype [30, 33, 34]
-Initializing network...
-val_loss_min:  0.1356
-val_acc_max:  0.9583
-genotype [13, 44, 50]
-Initializing network...
-val_loss_min:  0.1321
-val_acc_max:  0.9631
-genotype [21, 26, 38]
-Initializing network...
-val_loss_min:  0.1324
-val_acc_max:  0.9607
-genotype [15, 23, 49]
-Initializing network...
-val_loss_min:  0.1424
-val_acc_max:  0.9598
-population saved
-population [[23, 48, 5], [23, 48, 5], [15, 34, 18], [23, 48, 5], [15, 34, 18], [15, 34, 18], [15, 34, 18], [15, 34, 18], [10, 26, 8], [8, 50, 41], [30, 48, 46], [9, 33, 22], [9, 33, 22], [10, 26, 8], [28, 33, 22], [9, 34, 49], [24, 17, 46], [1, 25, 15], [30, 48, 46], [30, 48, 46], [29, 33, 40], [28, 30, 34], [9, 34, 49], [10, 26, 8], [29, 38, 47], [29, 30, 40], [30, 33, 34], [23, 50, 5], [21, 26, 38], [24, 17, 46]]
-[0.1191, 0.1191, 0.1215, 0.1191, 0.1215, 0.1215, 0.1215, 0.1215, 0.1251, 0.1239, 0.1296, 0.1251, 0.1251, 0.1251, 0.1274, 0.1281, 0.1287, 0.1214, 0.1296, 0.1296, 0.1322, 0.1298, 0.1281, 0.1251, 0.1311, 0.1277, 0.1356, 0.1237, 0.1324, 0.1287]
-min: 0.1191, max:0.1356, avg:0.12593
-5  	18    	0.12593 	0.00431271	0.1191	0.1356
-genotype [23, 25, 15]
-Initializing network...
-val_loss_min:  0.1357
-val_acc_max:  0.9631
-genotype [1, 48, 28]
-Initializing network...
-val_loss_min:  0.1379
-val_acc_max:  0.9586
-genotype [15, 35, 18]
-Initializing network...
-val_loss_min:  0.1354
-val_acc_max:  0.9601
-genotype [10, 48, 5]
-Initializing network...
-val_loss_min:  0.1213
-val_acc_max:  0.9683
-genotype [15, 47, 3]
-Initializing network...
-val_loss_min:  0.1396
-val_acc_max:  0.9619
-genotype [23, 34, 18]
-Initializing network...
-val_loss_min:  0.136
-val_acc_max:  0.9583
-genotype [10, 26, 33]
+val_loss_min:  0.134
+val_acc_max:  0.9592
+genotype [30, 28, 17]
 Initializing network...
 val_loss_min:  0.13
 val_acc_max:  0.9634
-genotype [29, 11, 40]
+genotype [23, 10, 26]
 Initializing network...
-val_loss_min:  0.1691
-val_acc_max:  0.95
-genotype [24, 30, 34]
+val_loss_min:  0.1723
+val_acc_max:  0.9473
+genotype [28, 9, 27]
 Initializing network...
-val_loss_min:  0.1302
-val_acc_max:  0.9619
-genotype [23, 26, 38]
+val_loss_min:  0.1796
+val_acc_max:  0.9476
+genotype [8, 12, 8]
 Initializing network...
-val_loss_min:  0.1351
-val_acc_max:  0.9598
-genotype [30, 33, 49]
+val_loss_min:  0.1648
+val_acc_max:  0.9537
+genotype [24, 9, 49]
 Initializing network...
-val_loss_min:  0.1466
-val_acc_max:  0.9564
-population saved
-population [[23, 48, 5], [23, 48, 5], [15, 34, 18], [23, 48, 5], [15, 34, 18], [15, 34, 18], [15, 34, 18], [10, 48, 5], [10, 26, 8], [8, 50, 41], [8, 50, 41], [9, 33, 22], [9, 33, 22], [10, 26, 8], [10, 26, 8], [10, 26, 8], [28, 33, 22], [1, 25, 15], [9, 34, 49], [9, 34, 49], [24, 17, 46], [24, 17, 46], [9, 34, 49], [10, 26, 8], [30, 48, 46], [29, 30, 40], [29, 38, 47], [23, 50, 5], [21, 26, 38], [24, 17, 46]]
-[0.1191, 0.1191, 0.1215, 0.1191, 0.1215, 0.1215, 0.1215, 0.1213, 0.1251, 0.1239, 0.1239, 0.1251, 0.1251, 0.1251, 0.1251, 0.1251, 0.1274, 0.1214, 0.1281, 0.1281, 0.1287, 0.1287, 0.1281, 0.1251, 0.1296, 0.1277, 0.1311, 0.1237, 0.1324, 0.1287]
-min: 0.1191, max:0.1324, avg:0.12505999999999998
-6  	11    	0.12506 	0.00356011	0.1191	0.1324
-genotype [23, 9, 5]
+val_loss_min:  0.1614
+val_acc_max:  0.9522
+genotype [12, 48, 37]
 Initializing network...
-val_loss_min:  0.196
-val_acc_max:  0.9409
-genotype [7, 29, 8]
-Initializing network...
-val_loss_min:  0.1547
-val_acc_max:  0.9552
-genotype [30, 26, 43]
-Initializing network...
-val_loss_min:  0.1405
-val_acc_max:  0.9583
-genotype [28, 33, 39]
-Initializing network...
-val_loss_min:  0.1392
-val_acc_max:  0.9622
-genotype [9, 35, 49]
-Initializing network...
-val_loss_min:  0.1304
-val_acc_max:  0.9628
-genotype [24, 17, 10]
-Initializing network...
-val_loss_min:  0.141
-val_acc_max:  0.9583
-population saved
-population [[23, 48, 5], [23, 48, 5], [23, 48, 5], [23, 48, 5], [1, 25, 15], [15, 34, 18], [15, 34, 18], [10, 48, 5], [15, 34, 18], [23, 50, 5], [8, 50, 41], [8, 50, 41], [9, 33, 22], [10, 26, 8], [10, 26, 8], [10, 26, 8], [28, 33, 22], [1, 25, 15], [10, 26, 8], [9, 34, 49], [29, 30, 40], [9, 34, 49], [9, 34, 49], [10, 26, 8], [30, 48, 46], [29, 30, 40], [24, 17, 46], [23, 50, 5], [29, 38, 47], [24, 17, 46]]
-[0.1191, 0.1191, 0.1191, 0.1191, 0.1214, 0.1215, 0.1215, 0.1213, 0.1215, 0.1237, 0.1239, 0.1239, 0.1251, 0.1251, 0.1251, 0.1251, 0.1274, 0.1214, 0.1251, 0.1281, 0.1277, 0.1281, 0.1281, 0.1251, 0.1296, 0.1277, 0.1287, 0.1237, 0.1311, 0.1287]
-min: 0.1191, max:0.1311, avg:0.12453333333333329
-7  	6     	0.124533	0.0034149 	0.1191	0.1311
-genotype [1, 50, 18]
-Initializing network...
-val_loss_min:  0.1276
-val_acc_max:  0.9634
-genotype [15, 25, 17]
-Initializing network...
-val_loss_min:  0.126
-val_acc_max:  0.9619
-genotype [15, 34, 46]
-Initializing network...
-val_loss_min:  0.1342
-val_acc_max:  0.9583
-genotype [30, 4, 18]
-Initializing network...
-val_loss_min:  0.274
-val_acc_max:  0.9217
-genotype [17, 31, 5]
-Initializing network...
-val_loss_min:  0.1164
-val_acc_max:  0.965
-genotype [8, 13, 41]
-Initializing network...
-val_loss_min:  0.154
-val_acc_max:  0.9525
-genotype [30, 26, 8]
-Initializing network...
-val_loss_min:  0.1364
-val_acc_max:  0.9583
-genotype [14, 30, 8]
-Initializing network...
-val_loss_min:  0.1356
-val_acc_max:  0.9619
-genotype [28, 33, 40]
-Initializing network...
-val_loss_min:  0.1268
-val_acc_max:  0.9619
-genotype [29, 30, 22]
-Initializing network...
-val_loss_min:  0.1451
-val_acc_max:  0.9586
-genotype [1, 30, 49]
-Initializing network...
-val_loss_min:  0.1351
-val_acc_max:  0.9589
-genotype [9, 34, 40]
-Initializing network...
-val_loss_min:  0.1282
-val_acc_max:  0.961
-genotype [13, 34, 49]
-Initializing network...
-val_loss_min:  0.1415
-val_acc_max:  0.9601
-population saved
-population [[23, 48, 5], [23, 48, 5], [23, 48, 5], [23, 48, 5], [10, 48, 5], [1, 25, 15], [15, 34, 18], [10, 48, 5], [15, 34, 18], [23, 50, 5], [17, 31, 5], [23, 50, 5], [9, 33, 22], [8, 50, 41], [10, 26, 8], [10, 26, 8], [28, 33, 22], [1, 25, 15], [10, 26, 8], [9, 34, 49], [28, 33, 40], [9, 34, 49], [9, 34, 49], [10, 26, 8], [9, 34, 49], [29, 30, 40], [24, 17, 46], [23, 50, 5], [30, 48, 46], [24, 17, 46]]
-[0.1191, 0.1191, 0.1191, 0.1191, 0.1213, 0.1214, 0.1215, 0.1213, 0.1215, 0.1237, 0.1164, 0.1237, 0.1251, 0.1239, 0.1251, 0.1251, 0.1274, 0.1214, 0.1251, 0.1281, 0.1268, 0.1281, 0.1281, 0.1251, 0.1281, 0.1277, 0.1287, 0.1237, 0.1296, 0.1287]
-min: 0.1164, max:0.1296, avg:0.12409999999999995
-8  	13    	0.1241  	0.00354166	0.1164	0.1296
-genotype [17, 48, 5]
-Initializing network...
-val_loss_min:  0.1157
-val_acc_max:  0.9659
-genotype [30, 31, 5]
-Initializing network...
-val_loss_min:  0.1227
-val_acc_max:  0.9607
-genotype [19, 49, 25]
-Initializing network...
-val_loss_min:  0.1285
+val_loss_min:  0.1299
 val_acc_max:  0.9625
-genotype [23, 36, 42]
+genotype [7, 44, 11]
 Initializing network...
-val_loss_min:  0.1396
-val_acc_max:  0.9607
-genotype [10, 25, 15]
+val_loss_min:  0.1212
+val_acc_max:  0.9656
+genotype [25, 10, 37]
 Initializing network...
-val_loss_min:  0.1288
-val_acc_max:  0.9619
-genotype [12, 48, 5]
+val_loss_min:  0.1495
+val_acc_max:  0.9564
+genotype [16, 32, 39]
 Initializing network...
-val_loss_min:  0.1349
-val_acc_max:  0.9598
-genotype [15, 50, 5]
+val_loss_min:  0.1389
+val_acc_max:  0.9586
+genotype [3, 3, 9]
 Initializing network...
-val_loss_min:  0.1416
-val_acc_max:  0.9573
-genotype [8, 33, 22]
+val_loss_min:  0.435
+val_acc_max:  0.8772
+genotype [13, 33, 6]
 Initializing network...
-val_loss_min:  0.1306
-val_acc_max:  0.9604
-genotype [9, 50, 41]
-Initializing network...
-val_loss_min:  0.1352
-val_acc_max:  0.9604
-genotype [6, 26, 22]
-Initializing network...
-val_loss_min:  0.1332
+val_loss_min:  0.1289
 val_acc_max:  0.9589
-genotype [28, 26, 8]
-Initializing network...
-val_loss_min:  0.1392
-val_acc_max:  0.9561
-genotype [8, 29, 40]
+genotype [30, 43, 33]
 Initializing network...
 val_loss_min:  0.133
-val_acc_max:  0.9604
-genotype [29, 34, 49]
-Initializing network...
-val_loss_min:  0.1374
-val_acc_max:  0.9592
-genotype [9, 21, 40]
-Initializing network...
-val_loss_min:  0.1307
-val_acc_max:  0.9604
-genotype [5, 18, 49]
-Initializing network...
-val_loss_min:  0.1672
-val_acc_max:  0.9525
-genotype [24, 3, 46]
-Initializing network...
-val_loss_min:  0.4992
-val_acc_max:  0.8605
-population saved
-population [[17, 48, 5], [23, 48, 5], [23, 48, 5], [23, 48, 5], [10, 48, 5], [10, 48, 5], [15, 34, 18], [10, 48, 5], [1, 25, 15], [15, 34, 18], [17, 31, 5], [23, 50, 5], [23, 50, 5], [23, 50, 5], [10, 26, 8], [10, 26, 8], [10, 26, 8], [1, 25, 15], [10, 26, 8], [10, 26, 8], [28, 33, 40], [9, 34, 49], [9, 34, 49], [10, 26, 8], [9, 34, 49], [29, 30, 40], [9, 34, 49], [23, 50, 5], [30, 48, 46], [24, 17, 46]]
-[0.1157, 0.1191, 0.1191, 0.1191, 0.1213, 0.1213, 0.1215, 0.1213, 0.1214, 0.1215, 0.1164, 0.1237, 0.1237, 0.1237, 0.1251, 0.1251, 0.1251, 0.1214, 0.1251, 0.1251, 0.1268, 0.1281, 0.1281, 0.1251, 0.1281, 0.1277, 0.1281, 0.1237, 0.1296, 0.1287]
-min: 0.1157, max:0.1296, avg:0.12365666666666662
-9  	16    	0.123657	0.00361881	0.1157	0.1296
-genotype [16, 31, 5]
-Initializing network...
-val_loss_min:  0.1305
-val_acc_max:  0.9592
-genotype [1, 48, 5]
-Initializing network...
-val_loss_min:  0.124
-val_acc_max:  0.9604
-genotype [23, 48, 44]
-Initializing network...
-val_loss_min:  0.1259
-val_acc_max:  0.9619
-genotype [23, 3, 5]
-Initializing network...
-val_loss_min:  0.5099
-val_acc_max:  0.8574
-genotype [1, 45, 15]
-Initializing network...
-val_loss_min:  0.1215
-val_acc_max:  0.9628
-genotype [4, 34, 16]
-Initializing network...
-val_loss_min:  0.1293
-val_acc_max:  0.9619
-genotype [30, 39, 5]
-Initializing network...
-val_loss_min:  0.1149
-val_acc_max:  0.9653
-genotype [22, 26, 23]
-Initializing network...
-val_loss_min:  0.1259
 val_acc_max:  0.9613
-genotype [26, 26, 8]
+genotype [2, 39, 19]
 Initializing network...
-val_loss_min:  0.1268
+val_loss_min:  0.1274
 val_acc_max:  0.9622
-genotype [20, 26, 19]
+genotype [10, 1, 24]
 Initializing network...
-val_loss_min:  0.1409
-val_acc_max:  0.9598
-genotype [28, 36, 40]
-Initializing network...
-val_loss_min:  0.1303
-val_acc_max:  0.9616
-genotype [30, 33, 46]
-Initializing network...
-val_loss_min:  0.1371
-val_acc_max:  0.961
-population saved
-population [[17, 48, 5], [23, 48, 5], [23, 48, 5], [23, 48, 5], [10, 48, 5], [10, 48, 5], [10, 48, 5], [10, 48, 5], [1, 25, 15], [1, 25, 15], [17, 31, 5], [23, 50, 5], [23, 50, 5], [23, 50, 5], [30, 39, 5], [23, 50, 5], [10, 26, 8], [1, 25, 15], [10, 26, 8], [10, 26, 8], [28, 33, 40], [10, 26, 8], [9, 34, 49], [10, 26, 8], [9, 34, 49], [29, 30, 40], [9, 34, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1157, 0.1191, 0.1191, 0.1191, 0.1213, 0.1213, 0.1213, 0.1213, 0.1214, 0.1214, 0.1164, 0.1237, 0.1237, 0.1237, 0.1149, 0.1237, 0.1251, 0.1214, 0.1251, 0.1251, 0.1268, 0.1251, 0.1281, 0.1251, 0.1281, 0.1277, 0.1281, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.12312999999999993
-10 	12    	0.12313 	0.00378974	0.1149	0.1287
-genotype [23, 31, 5]
-Initializing network...
-val_loss_min:  0.1284
-val_acc_max:  0.9625
-genotype [23, 48, 27]
-Initializing network...
-val_loss_min:  0.1248
-val_acc_max:  0.9622
-genotype [19, 9, 5]
-Initializing network...
-val_loss_min:  0.1801
-val_acc_max:  0.9442
-genotype [30, 50, 5]
-Initializing network...
-val_loss_min:  0.1221
-val_acc_max:  0.9622
-genotype [10, 26, 43]
-Initializing network...
-val_loss_min:  0.1401
-val_acc_max:  0.9622
-genotype [10, 26, 40]
-Initializing network...
-val_loss_min:  0.1391
-val_acc_max:  0.957
-genotype [30, 27, 30]
-Initializing network...
-val_loss_min:  0.1239
-val_acc_max:  0.9613
-genotype [29, 34, 42]
-Initializing network...
-val_loss_min:  0.1331
-val_acc_max:  0.9607
-genotype [9, 30, 10]
-Initializing network...
-val_loss_min:  0.1419
-val_acc_max:  0.9583
-genotype [9, 36, 28]
-Initializing network...
-val_loss_min:  0.1266
-val_acc_max:  0.9619
-population saved
-population [[30, 39, 5], [17, 48, 5], [17, 48, 5], [23, 48, 5], [10, 48, 5], [23, 48, 5], [10, 48, 5], [10, 48, 5], [10, 48, 5], [1, 25, 15], [17, 31, 5], [1, 25, 15], [1, 25, 15], [23, 50, 5], [30, 39, 5], [23, 50, 5], [23, 50, 5], [1, 25, 15], [10, 26, 8], [10, 26, 8], [10, 26, 8], [10, 26, 8], [9, 34, 49], [30, 27, 30], [9, 34, 49], [29, 30, 40], [9, 34, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1157, 0.1157, 0.1191, 0.1213, 0.1191, 0.1213, 0.1213, 0.1213, 0.1214, 0.1164, 0.1214, 0.1214, 0.1237, 0.1149, 0.1237, 0.1237, 0.1214, 0.1251, 0.1251, 0.1251, 0.1251, 0.1281, 0.1239, 0.1281, 0.1277, 0.1281, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.12250333333333327
-11 	10    	0.122503	0.00412993	0.1149	0.1287
-genotype [23, 48, 4]
-Initializing network...
-val_loss_min:  0.116
-val_acc_max:  0.9674
-genotype [30, 46, 5]
-Initializing network...
-val_loss_min:  0.1291
-val_acc_max:  0.9628
-genotype [6, 50, 5]
-Initializing network...
-val_loss_min:  0.1219
-val_acc_max:  0.9634
-genotype [23, 27, 30]
-Initializing network...
-val_loss_min:  0.1458
-val_acc_max:  0.9583
-genotype [9, 26, 8]
-Initializing network...
-val_loss_min:  0.1265
-val_acc_max:  0.9613
-genotype [30, 11, 8]
-Initializing network...
-val_loss_min:  0.1591
-val_acc_max:  0.9522
-genotype [9, 30, 40]
-Initializing network...
-val_loss_min:  0.1448
-val_acc_max:  0.9583
-population saved
-population [[30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [23, 48, 4], [23, 48, 5], [10, 48, 5], [10, 48, 5], [10, 48, 5], [17, 31, 5], [1, 25, 15], [1, 25, 15], [1, 25, 15], [30, 39, 5], [23, 50, 5], [23, 50, 5], [1, 25, 15], [10, 26, 8], [30, 50, 5], [10, 26, 8], [10, 26, 8], [10, 26, 8], [30, 27, 30], [9, 34, 49], [29, 30, 40], [9, 34, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1157, 0.1157, 0.1164, 0.116, 0.1191, 0.1213, 0.1213, 0.1213, 0.1164, 0.1214, 0.1214, 0.1214, 0.1149, 0.1237, 0.1237, 0.1214, 0.1251, 0.1221, 0.1251, 0.1251, 0.1251, 0.1239, 0.1281, 0.1277, 0.1281, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.1217433333333333
-12 	7     	0.121743	0.00442001	0.1149	0.1287
-genotype [25, 39, 5]
-Initializing network...
-val_loss_min:  0.1442
-val_acc_max:  0.9607
-genotype [1, 19, 43]
-Initializing network...
-val_loss_min:  0.1439
-val_acc_max:  0.957
-genotype [1, 36, 15]
-Initializing network...
-val_loss_min:  0.1335
-val_acc_max:  0.9634
-genotype [12, 39, 5]
-Initializing network...
-val_loss_min:  0.1351
-val_acc_max:  0.964
-genotype [30, 27, 8]
-Initializing network...
-val_loss_min:  0.1235
-val_acc_max:  0.9595
-genotype [10, 26, 30]
-Initializing network...
-val_loss_min:  0.135
-val_acc_max:  0.9567
-genotype [29, 30, 8]
-Initializing network...
-val_loss_min:  0.138
-val_acc_max:  0.9586
-genotype [15, 34, 31]
-Initializing network...
-val_loss_min:  0.1306
-val_acc_max:  0.9613
-population saved
-population [[30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 48, 5], [23, 48, 4], [17, 31, 5], [17, 31, 5], [23, 48, 5], [10, 48, 5], [17, 31, 5], [10, 48, 5], [1, 25, 15], [1, 25, 15], [30, 39, 5], [1, 25, 15], [30, 50, 5], [1, 25, 15], [23, 50, 5], [30, 50, 5], [30, 27, 8], [10, 26, 8], [10, 26, 8], [30, 27, 30], [9, 34, 49], [29, 30, 40], [9, 34, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1157, 0.1157, 0.1157, 0.116, 0.1164, 0.1164, 0.1191, 0.1213, 0.1164, 0.1213, 0.1214, 0.1214, 0.1149, 0.1214, 0.1221, 0.1214, 0.1237, 0.1221, 0.1235, 0.1251, 0.1251, 0.1239, 0.1281, 0.1277, 0.1281, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.12115999999999996
-13 	8     	0.12116 	0.0045373 	0.1149	0.1287
-genotype [17, 39, 5]
-Initializing network...
-val_loss_min:  0.1362
-val_acc_max:  0.9595
-genotype [29, 48, 5]
-Initializing network...
-val_loss_min:  0.1381
-val_acc_max:  0.9607
-genotype [17, 31, 4]
-Initializing network...
-val_loss_min:  0.1324
-val_acc_max:  0.9616
-genotype [22, 31, 5]
-Initializing network...
-val_loss_min:  0.1238
-val_acc_max:  0.9622
-genotype [10, 36, 37]
-Initializing network...
-val_loss_min:  0.1439
-val_acc_max:  0.9573
-genotype [10, 31, 41]
-Initializing network...
-val_loss_min:  0.1294
-val_acc_max:  0.9625
-genotype [1, 22, 15]
-Initializing network...
-val_loss_min:  0.1355
-val_acc_max:  0.9595
-genotype [1, 7, 15]
-Initializing network...
-val_loss_min:  0.1912
-val_acc_max:  0.9403
-genotype [1, 50, 5]
-Initializing network...
-val_loss_min:  0.1228
-val_acc_max:  0.965
-genotype [30, 50, 8]
-Initializing network...
-val_loss_min:  0.1187
-val_acc_max:  0.9653
-genotype [30, 27, 5]
-Initializing network...
-val_loss_min:  0.146
-val_acc_max:  0.9592
-genotype [9, 34, 32]
-Initializing network...
-val_loss_min:  0.1296
-val_acc_max:  0.9616
-genotype [30, 17, 46]
-Initializing network...
-val_loss_min:  0.1385
-val_acc_max:  0.9595
-population saved
-population [[30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [10, 48, 5], [17, 31, 5], [10, 48, 5], [1, 25, 15], [1, 25, 15], [30, 39, 5], [1, 25, 15], [30, 50, 5], [1, 25, 15], [30, 50, 8], [30, 50, 5], [30, 27, 8], [23, 50, 5], [30, 27, 30], [30, 27, 30], [9, 34, 49], [29, 30, 40], [9, 34, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1157, 0.1157, 0.1157, 0.1157, 0.1164, 0.1164, 0.1164, 0.1213, 0.1164, 0.1213, 0.1214, 0.1214, 0.1149, 0.1214, 0.1221, 0.1214, 0.1187, 0.1221, 0.1235, 0.1237, 0.1239, 0.1239, 0.1281, 0.1277, 0.1281, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.12080666666666665
-14 	13    	0.120807	0.00453864	0.1149	0.1287
-genotype [16, 39, 5]
-Initializing network...
-val_loss_min:  0.1234
-val_acc_max:  0.9631
-genotype [27, 48, 5]
-Initializing network...
-val_loss_min:  0.121
-val_acc_max:  0.965
-genotype [17, 48, 47]
-Initializing network...
-val_loss_min:  0.1339
-val_acc_max:  0.9644
-genotype [17, 48, 50]
-Initializing network...
-val_loss_min:  0.129
-val_acc_max:  0.961
-genotype [5, 31, 5]
-Initializing network...
-val_loss_min:  0.1266
-val_acc_max:  0.9644
-genotype [17, 17, 5]
+val_loss_min:  1.2113
+val_acc_max:  0.5469
+genotype [18, 12, 38]
 Initializing network...
 val_loss_min:  0.1474
+val_acc_max:  0.9552
+genotype [15, 19, 28]
+Initializing network...
+val_loss_min:  0.1351
+val_acc_max:  0.9586
+genotype [21, 39, 47]
+Initializing network...
+val_loss_min:  0.1336
+val_acc_max:  0.9601
+gen	nevals	avg    	std     	min   	max   
+0  	30    	0.18888	0.197802	0.1212	1.2113
+genotype [30, 31, 38]
+Initializing network...
+val_loss_min:  0.1358
+val_acc_max:  0.9604
+genotype [28, 6, 6]
+Initializing network...
+val_loss_min:  0.2144
+val_acc_max:  0.9369
+genotype [30, 29, 39]
+Initializing network...
+val_loss_min:  0.139
+val_acc_max:  0.961
+genotype [3, 23, 33]
+Initializing network...
+val_loss_min:  0.1437
+val_acc_max:  0.9583
+genotype [30, 27, 3]
+Initializing network...
+val_loss_min:  0.1344
+val_acc_max:  0.9583
+genotype [6, 24, 27]
+Initializing network...
+val_loss_min:  0.1378
+val_acc_max:  0.9583
+genotype [10, 12, 38]
+Initializing network...
+val_loss_min:  0.1556
+val_acc_max:  0.9516
+genotype [18, 3, 37]
+Initializing network...
+val_loss_min:  0.4902
+val_acc_max:  0.8537
+genotype [25, 16, 12]
+Initializing network...
+val_loss_min:  0.1299
+val_acc_max:  0.9573
+genotype [24, 10, 37]
+Initializing network...
+val_loss_min:  0.1667
+val_acc_max:  0.954
+genotype [25, 12, 8]
+Initializing network...
+val_loss_min:  0.1486
+val_acc_max:  0.9567
+genotype [28, 9, 17]
+Initializing network...
+val_loss_min:  0.1837
+val_acc_max:  0.9439
+genotype [17, 6, 27]
+Initializing network...
+val_loss_min:  0.2103
+val_acc_max:  0.9339
+genotype [3, 15, 24]
+Initializing network...
+val_loss_min:  0.1562
+val_acc_max:  0.9549
+genotype [10, 3, 9]
+Initializing network...
+val_loss_min:  0.4199
+val_acc_max:  0.876
+population saved
+population [[19, 23, 8], [30, 27, 27], [19, 23, 8], [2, 39, 19], [5, 38, 34], [13, 33, 6], [21, 31, 38], [30, 28, 17], [30, 29, 39], [5, 38, 34], [21, 39, 47], [4, 22, 14], [4, 22, 14], [30, 28, 17], [2, 15, 23], [16, 32, 39], [30, 27, 3], [6, 24, 27], [12, 48, 37], [7, 44, 11], [25, 16, 12], [16, 32, 39], [11, 19, 41], [13, 33, 6], [30, 43, 33], [2, 39, 19], [28, 9, 17], [18, 12, 38], [15, 19, 28], [21, 39, 47]]
+[0.1257, 0.145, 0.1257, 0.1274, 0.1286, 0.1289, 0.1233, 0.13, 0.139, 0.1286, 0.1336, 0.134, 0.134, 0.13, 0.1364, 0.1389, 0.1344, 0.1378, 0.1299, 0.1212, 0.1299, 0.1389, 0.1507, 0.1289, 0.133, 0.1274, 0.1837, 0.1474, 0.1351, 0.1336]
+min: 0.1212, max:0.1837, avg:0.13470000000000001
+1  	15    	0.1347 	0.0112693	0.1212	0.1837
+genotype [29, 44, 11]
+Initializing network...
+val_loss_min:  0.1272
+val_acc_max:  0.965
+genotype [20, 39, 19]
+Initializing network...
+val_loss_min:  0.1368
+val_acc_max:  0.9613
+genotype [13, 21, 34]
+Initializing network...
+val_loss_min:  0.145
+val_acc_max:  0.9567
+genotype [13, 33, 34]
+Initializing network...
+val_loss_min:  0.143
+val_acc_max:  0.9613
+genotype [16, 33, 6]
+Initializing network...
+val_loss_min:  0.1252
+val_acc_max:  0.9619
+genotype [12, 16, 12]
+Initializing network...
+val_loss_min:  0.1351
 val_acc_max:  0.9589
-genotype [18, 48, 45]
+genotype [25, 48, 37]
+Initializing network...
+val_loss_min:  0.1333
+val_acc_max:  0.9637
+genotype [30, 43, 47]
+Initializing network...
+val_loss_min:  0.1355
+val_acc_max:  0.9619
+genotype [21, 39, 33]
+Initializing network...
+val_loss_min:  0.138
+val_acc_max:  0.9625
+genotype [30, 27, 38]
+Initializing network...
+val_loss_min:  0.1303
+val_acc_max:  0.9607
+genotype [30, 9, 39]
+Initializing network...
+val_loss_min:  0.167
+val_acc_max:  0.9488
+genotype [30, 27, 38]
+Initializing network...
+val_loss_min:  0.1374
+val_acc_max:  0.9586
+genotype [18, 12, 27]
+Initializing network...
+val_loss_min:  0.1449
+val_acc_max:  0.954
+genotype [11, 13, 41]
+Initializing network...
+val_loss_min:  0.1442
+val_acc_max:  0.957
+population saved
+population [[19, 23, 8], [21, 31, 38], [19, 23, 8], [19, 23, 8], [2, 39, 19], [13, 33, 6], [21, 31, 38], [5, 38, 34], [30, 29, 39], [16, 33, 6], [21, 39, 47], [25, 48, 37], [30, 28, 17], [30, 28, 17], [30, 43, 47], [21, 39, 33], [21, 39, 47], [4, 22, 14], [12, 48, 37], [7, 44, 11], [25, 16, 12], [2, 15, 23], [6, 24, 27], [13, 33, 6], [30, 43, 33], [2, 39, 19], [30, 27, 38], [18, 12, 27], [15, 19, 28], [21, 39, 47]]
+[0.1257, 0.1233, 0.1257, 0.1257, 0.1274, 0.1289, 0.1233, 0.1286, 0.139, 0.1252, 0.1336, 0.1333, 0.13, 0.13, 0.1355, 0.138, 0.1336, 0.134, 0.1299, 0.1212, 0.1299, 0.1364, 0.1378, 0.1289, 0.133, 0.1274, 0.1374, 0.1449, 0.1351, 0.1336]
+min: 0.1212, max:0.1449, avg:0.13121
+2  	14    	0.13121	0.00539854	0.1212	0.1449
+genotype [7, 31, 38]
+Initializing network...
+val_loss_min:  0.1353
+val_acc_max:  0.9598
+genotype [21, 44, 11]
+Initializing network...
+val_loss_min:  0.132
+val_acc_max:  0.9625
+genotype [13, 33, 22]
+Initializing network...
+val_loss_min:  0.1328
+val_acc_max:  0.9604
+genotype [30, 43, 37]
+Initializing network...
+val_loss_min:  0.1336
+val_acc_max:  0.9607
+genotype [25, 48, 33]
+Initializing network...
+val_loss_min:  0.1407
+val_acc_max:  0.9592
+genotype [21, 22, 14]
+Initializing network...
+val_loss_min:  0.1594
+val_acc_max:  0.9558
+genotype [4, 39, 47]
+Initializing network...
+val_loss_min:  0.1229
+val_acc_max:  0.9628
+genotype [27, 2, 47]
+Initializing network...
+val_loss_min:  0.6609
+val_acc_max:  0.8041
+genotype [6, 34, 27]
+Initializing network...
+val_loss_min:  0.1373
+val_acc_max:  0.9595
+genotype [30, 29, 27]
+Initializing network...
+val_loss_min:  0.1321
+val_acc_max:  0.9601
+genotype [30, 12, 39]
+Initializing network...
+val_loss_min:  0.167
+val_acc_max:  0.95
+population saved
+population [[19, 23, 8], [21, 31, 38], [21, 31, 38], [16, 33, 6], [19, 23, 8], [19, 23, 8], [21, 31, 38], [2, 39, 19], [2, 39, 19], [16, 33, 6], [13, 33, 22], [13, 33, 6], [12, 48, 37], [25, 16, 12], [30, 28, 17], [30, 28, 17], [21, 39, 47], [4, 22, 14], [12, 48, 37], [7, 44, 11], [25, 16, 12], [4, 39, 47], [15, 19, 28], [13, 33, 6], [30, 43, 33], [2, 39, 19], [6, 34, 27], [21, 39, 33], [30, 29, 27], [21, 39, 47]]
+[0.1257, 0.1233, 0.1233, 0.1252, 0.1257, 0.1257, 0.1233, 0.1274, 0.1274, 0.1252, 0.1328, 0.1289, 0.1299, 0.1299, 0.13, 0.13, 0.1336, 0.134, 0.1299, 0.1212, 0.1299, 0.1229, 0.1351, 0.1289, 0.133, 0.1274, 0.1373, 0.138, 0.1321, 0.1336]
+min: 0.1212, max:0.138, avg:0.12902
+3  	11    	0.12902	0.0043377 	0.1212	0.138 
+genotype [10, 44, 11]
+Initializing network...
+val_loss_min:  0.128
+val_acc_max:  0.9625
+genotype [28, 39, 12]
+Initializing network...
+val_loss_min:  0.1309
+val_acc_max:  0.9634
+genotype [21, 31, 22]
+Initializing network...
+val_loss_min:  0.1369
+val_acc_max:  0.958
+genotype [29, 31, 38]
+Initializing network...
+val_loss_min:  0.1367
+val_acc_max:  0.9558
+genotype [16, 33, 8]
+Initializing network...
+val_loss_min:  0.1305
+val_acc_max:  0.9634
+genotype [19, 23, 31]
+Initializing network...
+val_loss_min:  0.1433
+val_acc_max:  0.9573
+genotype [2, 33, 6]
+Initializing network...
+val_loss_min:  0.1317
+val_acc_max:  0.9604
+genotype [13, 39, 19]
+Initializing network...
+val_loss_min:  0.138
+val_acc_max:  0.9616
+genotype [25, 28, 17]
+Initializing network...
+val_loss_min:  0.1339
+val_acc_max:  0.9589
+genotype [30, 1, 12]
+Initializing network...
+val_loss_min:  1.2271
+val_acc_max:  0.5646
+genotype [30, 28, 27]
+Initializing network...
+val_loss_min:  0.1373
+val_acc_max:  0.9634
+genotype [30, 29, 17]
+Initializing network...
+val_loss_min:  0.1242
+val_acc_max:  0.9592
+genotype [30, 19, 34]
+Initializing network...
+val_loss_min:  0.1504
+val_acc_max:  0.9543
+genotype [30, 22, 14]
+Initializing network...
+val_loss_min:  0.1316
+val_acc_max:  0.9613
+genotype [6, 34, 33]
+Initializing network...
+val_loss_min:  0.1265
+val_acc_max:  0.9637
+genotype [21, 39, 27]
+Initializing network...
+val_loss_min:  0.1414
+val_acc_max:  0.9604
+population saved
+population [[19, 23, 8], [21, 31, 38], [21, 31, 38], [16, 33, 6], [19, 23, 8], [16, 33, 6], [21, 31, 38], [2, 39, 19], [19, 23, 8], [16, 33, 6], [2, 39, 19], [2, 39, 19], [12, 48, 37], [25, 16, 12], [13, 33, 6], [12, 48, 37], [25, 16, 12], [12, 48, 37], [12, 48, 37], [7, 44, 11], [25, 16, 12], [4, 39, 47], [13, 33, 22], [13, 33, 6], [30, 43, 33], [2, 39, 19], [6, 34, 27], [30, 22, 14], [6, 34, 33], [21, 39, 47]]
+[0.1257, 0.1233, 0.1233, 0.1252, 0.1257, 0.1252, 0.1233, 0.1274, 0.1257, 0.1252, 0.1274, 0.1274, 0.1299, 0.1299, 0.1289, 0.1299, 0.1299, 0.1299, 0.1299, 0.1212, 0.1299, 0.1229, 0.1328, 0.1289, 0.133, 0.1274, 0.1373, 0.1316, 0.1265, 0.1336]
+min: 0.1212, max:0.1373, avg:0.12794000000000003
+4  	16    	0.12794	0.00359273	0.1212	0.1373
+genotype [7, 44, 43]
+Initializing network...
+val_loss_min:  0.1234
+val_acc_max:  0.9644
+genotype [21, 34, 38]
+Initializing network...
+val_loss_min:  0.1329
+val_acc_max:  0.9628
+genotype [19, 39, 12]
+Initializing network...
+val_loss_min:  0.1241
+val_acc_max:  0.9625
+genotype [19, 11, 20]
+Initializing network...
+val_loss_min:  0.1569
+val_acc_max:  0.9564
+genotype [30, 39, 19]
 Initializing network...
 val_loss_min:  0.1384
 val_acc_max:  0.9616
-genotype [23, 27, 8]
-Initializing network...
-val_loss_min:  0.1223
-val_acc_max:  0.9647
-genotype [30, 15, 40]
-Initializing network...
-val_loss_min:  0.1493
-val_acc_max:  0.9564
-genotype [29, 27, 30]
-Initializing network...
-val_loss_min:  0.1291
-val_acc_max:  0.9589
-genotype [12, 17, 46]
-Initializing network...
-val_loss_min:  0.1359
-val_acc_max:  0.9595
-genotype [24, 28, 2]
-Initializing network...
-val_loss_min:  0.1542
-val_acc_max:  0.954
-population saved
-population [[30, 39, 5], [30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [10, 48, 5], [17, 31, 5], [30, 50, 8], [10, 48, 5], [10, 48, 5], [30, 39, 5], [1, 25, 15], [1, 25, 15], [1, 25, 15], [30, 50, 8], [30, 50, 5], [30, 50, 5], [23, 27, 8], [23, 50, 5], [30, 27, 30], [9, 34, 49], [29, 30, 40], [9, 34, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1149, 0.1157, 0.1157, 0.1157, 0.1164, 0.1164, 0.1164, 0.1213, 0.1164, 0.1187, 0.1213, 0.1213, 0.1149, 0.1214, 0.1214, 0.1214, 0.1187, 0.1221, 0.1221, 0.1223, 0.1237, 0.1239, 0.1281, 0.1277, 0.1281, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.12056333333333331
-15 	12    	0.120563	0.00452677	0.1149	0.1287
-genotype [30, 32, 7]
-Initializing network...
-val_loss_min:  0.1279
-val_acc_max:  0.964
-genotype [17, 2, 32]
-Initializing network...
-val_loss_min:  0.7108
-val_acc_max:  0.791
-genotype [17, 39, 8]
-Initializing network...
-val_loss_min:  0.1273
-val_acc_max:  0.9592
-genotype [30, 17, 34]
-Initializing network...
-val_loss_min:  0.1402
-val_acc_max:  0.9598
-genotype [10, 50, 8]
-Initializing network...
-val_loss_min:  0.1332
-val_acc_max:  0.9589
-genotype [30, 50, 45]
-Initializing network...
-val_loss_min:  0.1305
-val_acc_max:  0.9634
-genotype [29, 30, 45]
-Initializing network...
-val_loss_min:  0.1407
-val_acc_max:  0.961
-genotype [20, 34, 8]
-Initializing network...
-val_loss_min:  0.1292
-val_acc_max:  0.9659
-genotype [9, 48, 49]
-Initializing network...
-val_loss_min:  0.1341
-val_acc_max:  0.9622
-population saved
-population [[30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [30, 50, 8], [10, 48, 5], [10, 48, 5], [30, 39, 5], [10, 48, 5], [1, 25, 15], [1, 25, 15], [30, 50, 8], [30, 50, 5], [30, 50, 5], [23, 27, 8], [23, 50, 5], [23, 50, 5], [30, 27, 30], [29, 30, 40], [9, 34, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1149, 0.1149, 0.1157, 0.1157, 0.1164, 0.1157, 0.1164, 0.1164, 0.1164, 0.1187, 0.1213, 0.1213, 0.1149, 0.1213, 0.1214, 0.1214, 0.1187, 0.1221, 0.1221, 0.1223, 0.1237, 0.1237, 0.1239, 0.1277, 0.1281, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.12019999999999999
-16 	9     	0.1202  	0.00445421	0.1149	0.1287
-genotype [29, 39, 5]
-Initializing network...
-val_loss_min:  0.133
-val_acc_max:  0.9656
-genotype [17, 25, 5]
-Initializing network...
-val_loss_min:  0.1425
-val_acc_max:  0.9595
-genotype [30, 50, 25]
-Initializing network...
-val_loss_min:  0.1313
-val_acc_max:  0.9613
-genotype [10, 34, 5]
-Initializing network...
-val_loss_min:  0.1273
-val_acc_max:  0.9616
-genotype [10, 25, 2]
-Initializing network...
-val_loss_min:  0.1662
-val_acc_max:  0.9512
-genotype [13, 39, 5]
-Initializing network...
-val_loss_min:  0.129
-val_acc_max:  0.9622
-genotype [23, 5, 8]
-Initializing network...
-val_loss_min:  0.2598
-val_acc_max:  0.9217
-genotype [26, 27, 30]
-Initializing network...
-val_loss_min:  0.1407
-val_acc_max:  0.9604
-genotype [29, 30, 49]
-Initializing network...
-val_loss_min:  0.1259
-val_acc_max:  0.9595
-genotype [24, 17, 26]
-Initializing network...
-val_loss_min:  0.1426
-val_acc_max:  0.9564
-genotype [24, 34, 46]
-Initializing network...
-val_loss_min:  0.1417
-val_acc_max:  0.9607
-population saved
-population [[30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 31, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [30, 50, 8], [10, 48, 5], [30, 39, 5], [10, 48, 5], [1, 25, 15], [1, 25, 15], [30, 50, 8], [30, 50, 5], [30, 50, 5], [23, 27, 8], [23, 50, 5], [23, 50, 5], [30, 27, 30], [30, 50, 5], [29, 30, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1157, 0.1164, 0.1157, 0.1164, 0.1164, 0.1164, 0.1164, 0.1187, 0.1213, 0.1149, 0.1213, 0.1214, 0.1214, 0.1187, 0.1221, 0.1221, 0.1223, 0.1237, 0.1237, 0.1239, 0.1221, 0.1259, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.11975
-17 	11    	0.11975 	0.00419379	0.1149	0.1287
-genotype [30, 40, 5]
-Initializing network...
-val_loss_min:  0.1395
-val_acc_max:  0.9613
-genotype [22, 39, 5]
-Initializing network...
-val_loss_min:  0.136
-val_acc_max:  0.9619
-genotype [17, 48, 30]
-Initializing network...
-val_loss_min:  0.1223
-val_acc_max:  0.9631
-genotype [17, 31, 48]
-Initializing network...
-val_loss_min:  0.1313
-val_acc_max:  0.961
-genotype [10, 48, 46]
-Initializing network...
-val_loss_min:  0.1389
-val_acc_max:  0.9616
-genotype [20, 48, 5]
-Initializing network...
-val_loss_min:  0.1348
-val_acc_max:  0.961
-genotype [1, 25, 10]
-Initializing network...
-val_loss_min:  0.1342
-val_acc_max:  0.9601
-genotype [23, 50, 16]
-Initializing network...
-val_loss_min:  0.1343
-val_acc_max:  0.9616
-genotype [30, 30, 49]
-Initializing network...
-val_loss_min:  0.1364
-val_acc_max:  0.9592
-genotype [29, 35, 30]
-Initializing network...
-val_loss_min:  0.1367
-val_acc_max:  0.9604
-genotype [24, 17, 20]
-Initializing network...
-val_loss_min:  0.1461
-val_acc_max:  0.9537
-population saved
-population [[30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [30, 50, 8], [30, 39, 5], [10, 48, 5], [1, 25, 15], [1, 25, 15], [30, 50, 8], [30, 50, 5], [30, 50, 5], [30, 50, 5], [23, 50, 5], [23, 27, 8], [23, 50, 5], [30, 50, 5], [29, 30, 49], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1157, 0.1157, 0.1164, 0.1164, 0.1164, 0.1164, 0.1164, 0.1187, 0.1149, 0.1213, 0.1214, 0.1214, 0.1187, 0.1221, 0.1221, 0.1221, 0.1237, 0.1223, 0.1237, 0.1221, 0.1259, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.11947666666666668
-18 	11    	0.119477	0.00422222	0.1149	0.1287
-genotype [30, 39, 36]
-Initializing network...
-val_loss_min:  0.1353
-val_acc_max:  0.961
-genotype [25, 39, 34]
-Initializing network...
-val_loss_min:  0.1244
-val_acc_max:  0.9634
-genotype [30, 18, 33]
-Initializing network...
-val_loss_min:  0.1519
-val_acc_max:  0.957
-genotype [17, 12, 15]
-Initializing network...
-val_loss_min:  0.1529
-val_acc_max:  0.9525
-genotype [21, 50, 5]
-Initializing network...
-val_loss_min:  0.1214
-val_acc_max:  0.9634
-genotype [23, 27, 35]
-Initializing network...
-val_loss_min:  0.1353
-val_acc_max:  0.9592
-population saved
-population [[30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [30, 50, 8], [30, 39, 5], [30, 50, 8], [10, 48, 5], [1, 25, 15], [30, 50, 8], [30, 50, 5], [21, 50, 5], [30, 50, 5], [30, 50, 5], [23, 27, 8], [23, 50, 5], [30, 50, 5], [23, 50, 5], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1157, 0.1157, 0.1164, 0.1164, 0.1164, 0.1164, 0.1187, 0.1149, 0.1187, 0.1213, 0.1214, 0.1187, 0.1221, 0.1214, 0.1221, 0.1221, 0.1223, 0.1237, 0.1221, 0.1237, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.11918666666666668
-19 	6     	0.119187	0.00409518	0.1149	0.1287
-genotype [30, 39, 43]
-Initializing network...
-val_loss_min:  0.1332
-val_acc_max:  0.9616
-genotype [17, 48, 4]
-Initializing network...
-val_loss_min:  0.1377
-val_acc_max:  0.9631
-genotype [17, 26, 5]
-Initializing network...
-val_loss_min:  0.1345
-val_acc_max:  0.9604
-genotype [30, 48, 8]
+genotype [12, 48, 12]
 Initializing network...
 val_loss_min:  0.1285
+val_acc_max:  0.9631
+genotype [25, 16, 37]
+Initializing network...
+val_loss_min:  0.1424
+val_acc_max:  0.9564
+genotype [7, 48, 37]
+Initializing network...
+val_loss_min:  0.1314
 val_acc_max:  0.965
-genotype [1, 50, 46]
-Initializing network...
-val_loss_min:  0.1317
-val_acc_max:  0.9589
-genotype [21, 12, 15]
-Initializing network...
-val_loss_min:  0.1572
-val_acc_max:  0.9516
-genotype [30, 33, 5]
-Initializing network...
-val_loss_min:  0.1432
-val_acc_max:  0.9567
-genotype [7, 50, 5]
-Initializing network...
-val_loss_min:  0.1215
-val_acc_max:  0.9637
-genotype [23, 50, 6]
-Initializing network...
-val_loss_min:  0.1411
-val_acc_max:  0.9613
-genotype [24, 22, 46]
+genotype [25, 24, 14]
 Initializing network...
 val_loss_min:  0.1392
-val_acc_max:  0.9619
-population saved
-population [[30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [30, 50, 8], [30, 39, 5], [30, 50, 8], [30, 50, 8], [10, 48, 5], [30, 50, 8], [30, 50, 5], [21, 50, 5], [30, 50, 5], [30, 50, 5], [23, 27, 8], [23, 27, 8], [7, 50, 5], [23, 50, 5], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1157, 0.1157, 0.1164, 0.1164, 0.1164, 0.1187, 0.1149, 0.1187, 0.1187, 0.1213, 0.1187, 0.1221, 0.1214, 0.1221, 0.1221, 0.1223, 0.1223, 0.1215, 0.1237, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.11898000000000002
-20 	10    	0.11898 	0.00405778	0.1149	0.1287
-genotype [30, 39, 28]
+val_acc_max:  0.9567
+genotype [30, 10, 12]
 Initializing network...
-val_loss_min:  0.1246
+val_loss_min:  0.1624
+val_acc_max:  0.9497
+genotype [6, 34, 16]
+Initializing network...
+val_loss_min:  0.1341
 val_acc_max:  0.9628
-genotype [30, 48, 16]
+population saved
+population [[7, 44, 43], [4, 39, 47], [21, 31, 38], [21, 31, 38], [21, 31, 38], [16, 33, 6], [21, 31, 38], [16, 33, 6], [19, 23, 8], [19, 39, 12], [2, 39, 19], [6, 34, 33], [2, 39, 19], [25, 16, 12], [2, 39, 19], [2, 39, 19], [13, 33, 6], [13, 33, 6], [12, 48, 12], [7, 44, 11], [25, 16, 12], [4, 39, 47], [12, 48, 37], [13, 33, 6], [30, 43, 33], [2, 39, 19], [13, 33, 22], [30, 22, 14], [6, 34, 33], [21, 39, 47]]
+[0.1234, 0.1229, 0.1233, 0.1233, 0.1233, 0.1252, 0.1233, 0.1252, 0.1257, 0.1241, 0.1274, 0.1265, 0.1274, 0.1299, 0.1274, 0.1274, 0.1289, 0.1289, 0.1285, 0.1212, 0.1299, 0.1229, 0.1299, 0.1289, 0.133, 0.1274, 0.1328, 0.1316, 0.1265, 0.1336]
+min: 0.1212, max:0.1336, avg:0.12699
+5  	11    	0.12699	0.00329407	0.1212	0.1336
+genotype [7, 39, 47]
+Initializing network...
+val_loss_min:  0.1329
+val_acc_max:  0.9634
+genotype [4, 44, 10]
+Initializing network...
+val_loss_min:  0.1406
+val_acc_max:  0.9567
+genotype [4, 8, 47]
+Initializing network...
+val_loss_min:  0.1616
+val_acc_max:  0.9531
+genotype [3, 31, 38]
+Initializing network...
+val_loss_min:  0.1274
+val_acc_max:  0.965
+genotype [21, 27, 41]
+Initializing network...
+val_loss_min:  0.1414
+val_acc_max:  0.9637
+genotype [19, 23, 12]
+Initializing network...
+val_loss_min:  0.1301
+val_acc_max:  0.9659
+genotype [16, 23, 24]
+Initializing network...
+val_loss_min:  0.1361
+val_acc_max:  0.9616
+genotype [30, 33, 6]
+Initializing network...
+val_loss_min:  0.1228
+val_acc_max:  0.9628
+genotype [6, 12, 33]
+Initializing network...
+val_loss_min:  0.1599
+val_acc_max:  0.9512
+genotype [30, 22, 19]
+Initializing network...
+val_loss_min:  0.1283
+val_acc_max:  0.9616
+genotype [2, 39, 12]
+Initializing network...
+val_loss_min:  0.1302
+val_acc_max:  0.961
+genotype [12, 48, 19]
+Initializing network...
+val_loss_min:  0.1275
+val_acc_max:  0.9628
+genotype [13, 33, 10]
+Initializing network...
+val_loss_min:  0.1345
+val_acc_max:  0.9625
+genotype [13, 19, 6]
+Initializing network...
+val_loss_min:  0.1506
+val_acc_max:  0.9598
+genotype [24, 28, 6]
 Initializing network...
 val_loss_min:  0.1272
 val_acc_max:  0.9613
-genotype [17, 31, 13]
+genotype [12, 43, 29]
 Initializing network...
-val_loss_min:  0.1422
-val_acc_max:  0.958
-genotype [25, 16, 8]
+val_loss_min:  0.1358
+val_acc_max:  0.9598
+genotype [30, 33, 22]
+Initializing network...
+val_loss_min:  0.1269
+val_acc_max:  0.9595
+genotype [13, 22, 14]
+Initializing network...
+val_loss_min:  0.1404
+val_acc_max:  0.9598
+genotype [30, 39, 16]
+Initializing network...
+val_loss_min:  0.1324
+val_acc_max:  0.9637
+genotype [30, 47, 29]
+Initializing network...
+val_loss_min:  0.1312
+val_acc_max:  0.9628
+population saved
+population [[7, 44, 43], [4, 39, 47], [21, 31, 38], [21, 31, 38], [21, 31, 38], [16, 33, 6], [21, 31, 38], [7, 44, 43], [19, 23, 8], [19, 39, 12], [2, 39, 19], [30, 33, 6], [6, 34, 33], [25, 16, 12], [2, 39, 19], [2, 39, 19], [2, 39, 19], [2, 39, 19], [12, 48, 12], [7, 44, 11], [25, 16, 12], [4, 39, 47], [24, 28, 6], [13, 33, 6], [25, 16, 12], [2, 39, 19], [30, 33, 22], [30, 22, 14], [6, 34, 33], [30, 47, 29]]
+[0.1234, 0.1229, 0.1233, 0.1233, 0.1233, 0.1252, 0.1233, 0.1234, 0.1257, 0.1241, 0.1274, 0.1228, 0.1265, 0.1299, 0.1274, 0.1274, 0.1274, 0.1274, 0.1285, 0.1212, 0.1299, 0.1229, 0.1272, 0.1289, 0.1299, 0.1274, 0.1269, 0.1316, 0.1265, 0.1312]
+min: 0.1212, max:0.1316, avg:0.1262066666666667
+6  	20    	0.126207	0.00277752	0.1212	0.1316
+genotype [26, 33, 2]
+Initializing network...
+val_loss_min:  0.1498
+val_acc_max:  0.9564
+genotype [30, 25, 38]
+Initializing network...
+val_loss_min:  0.1375
+val_acc_max:  0.9586
+genotype [26, 44, 43]
 Initializing network...
 val_loss_min:  0.1334
-val_acc_max:  0.9592
-genotype [21, 34, 30]
+val_acc_max:  0.9613
+genotype [30, 39, 12]
 Initializing network...
-val_loss_min:  0.1322
+val_loss_min:  0.1292
+val_acc_max:  0.9616
+genotype [15, 10, 6]
+Initializing network...
+val_loss_min:  0.1557
+val_acc_max:  0.9528
+genotype [19, 34, 33]
+Initializing network...
+val_loss_min:  0.1388
+val_acc_max:  0.9586
+genotype [6, 23, 8]
+Initializing network...
+val_loss_min:  0.1346
+val_acc_max:  0.9625
+genotype [6, 47, 24]
+Initializing network...
+val_loss_min:  0.124
+val_acc_max:  0.9647
+genotype [30, 33, 38]
+Initializing network...
+val_loss_min:  0.1435
+val_acc_max:  0.9604
+genotype [1, 39, 19]
+Initializing network...
+val_loss_min:  0.1305
+val_acc_max:  0.9616
+genotype [2, 28, 6]
+Initializing network...
+val_loss_min:  0.1317
 val_acc_max:  0.9592
-genotype [7, 50, 9]
+genotype [2, 39, 32]
+Initializing network...
+val_loss_min:  0.1332
+val_acc_max:  0.961
+genotype [2, 10, 19]
+Initializing network...
+val_loss_min:  0.1558
+val_acc_max:  0.9531
+genotype [12, 48, 17]
+Initializing network...
+val_loss_min:  0.1324
+val_acc_max:  0.9619
+genotype [13, 16, 12]
+Initializing network...
+val_loss_min:  0.1467
+val_acc_max:  0.9564
+genotype [25, 33, 6]
+Initializing network...
+val_loss_min:  0.1391
+val_acc_max:  0.9592
+genotype [9, 47, 29]
+Initializing network...
+val_loss_min:  0.1319
+val_acc_max:  0.9628
+population saved
+population [[7, 44, 11], [4, 39, 47], [4, 39, 47], [4, 39, 47], [21, 31, 38], [21, 31, 38], [21, 31, 38], [7, 44, 43], [7, 44, 43], [19, 39, 12], [2, 39, 19], [30, 33, 6], [6, 34, 33], [25, 16, 12], [6, 47, 24], [2, 39, 19], [2, 39, 19], [2, 39, 19], [12, 48, 12], [7, 44, 11], [25, 16, 12], [4, 39, 47], [24, 28, 6], [13, 33, 6], [25, 16, 12], [2, 39, 19], [30, 33, 22], [25, 16, 12], [6, 34, 33], [30, 47, 29]]
+[0.1212, 0.1229, 0.1229, 0.1229, 0.1233, 0.1233, 0.1233, 0.1234, 0.1234, 0.1241, 0.1274, 0.1228, 0.1265, 0.1299, 0.124, 0.1274, 0.1274, 0.1274, 0.1285, 0.1212, 0.1299, 0.1229, 0.1272, 0.1289, 0.1299, 0.1274, 0.1269, 0.1299, 0.1265, 0.1312]
+min: 0.1212, max:0.1312, avg:0.1257966666666667
+7  	17    	0.125797	0.00289603	0.1212	0.1312
+genotype [30, 44, 11]
+Initializing network...
+val_loss_min:  0.1277
+val_acc_max:  0.961
+genotype [3, 39, 3]
+Initializing network...
+val_loss_min:  0.1354
+val_acc_max:  0.958
+genotype [4, 33, 27]
+Initializing network...
+val_loss_min:  0.1367
+val_acc_max:  0.9616
+genotype [30, 26, 47]
+Initializing network...
+val_loss_min:  0.1428
+val_acc_max:  0.9619
+genotype [4, 23, 47]
+Initializing network...
+val_loss_min:  0.131
+val_acc_max:  0.9607
+genotype [6, 39, 12]
+Initializing network...
+val_loss_min:  0.1353
+val_acc_max:  0.961
+genotype [19, 47, 24]
+Initializing network...
+val_loss_min:  0.1252
+val_acc_max:  0.9616
+genotype [24, 28, 32]
+Initializing network...
+val_loss_min:  0.14
+val_acc_max:  0.9592
+genotype [17, 39, 12]
+Initializing network...
+val_loss_min:  0.1196
+val_acc_max:  0.9671
+genotype [25, 1, 6]
+Initializing network...
+val_loss_min:  1.2601
+val_acc_max:  0.5615
+genotype [25, 13, 12]
+Initializing network...
+val_loss_min:  0.1615
+val_acc_max:  0.9491
+genotype [25, 48, 15]
+Initializing network...
+val_loss_min:  0.1315
+val_acc_max:  0.9598
+genotype [25, 8, 29]
+Initializing network...
+val_loss_min:  0.165
+val_acc_max:  0.9506
+population saved
+population [[7, 44, 11], [4, 39, 47], [4, 39, 47], [4, 39, 47], [21, 31, 38], [21, 31, 38], [4, 39, 47], [21, 31, 38], [21, 31, 38], [21, 31, 38], [7, 44, 43], [30, 33, 6], [6, 34, 33], [19, 47, 24], [6, 47, 24], [6, 34, 33], [30, 33, 22], [2, 39, 19], [2, 39, 19], [7, 44, 11], [2, 39, 19], [4, 39, 47], [17, 39, 12], [12, 48, 19], [25, 16, 12], [2, 39, 19], [30, 33, 22], [25, 16, 12], [6, 34, 33], [30, 47, 29]]
+[0.1212, 0.1229, 0.1229, 0.1229, 0.1233, 0.1233, 0.1229, 0.1233, 0.1233, 0.1233, 0.1234, 0.1228, 0.1265, 0.1252, 0.124, 0.1265, 0.1269, 0.1274, 0.1274, 0.1212, 0.1274, 0.1229, 0.1196, 0.1275, 0.1299, 0.1274, 0.1269, 0.1299, 0.1265, 0.1312]
+min: 0.1196, max:0.1312, avg:0.12499333333333337
+8  	13    	0.124993	0.00278507	0.1196	0.1312
+genotype [17, 44, 39]
+Initializing network...
+val_loss_min:  0.1423
+val_acc_max:  0.9576
+genotype [7, 39, 12]
+Initializing network...
+val_loss_min:  0.1194
+val_acc_max:  0.9656
+genotype [7, 39, 11]
+Initializing network...
+val_loss_min:  0.1312
+val_acc_max:  0.9607
+genotype [1, 18, 39]
+Initializing network...
+val_loss_min:  0.1362
+val_acc_max:  0.9613
+genotype [4, 39, 37]
+Initializing network...
+val_loss_min:  0.1312
+val_acc_max:  0.9607
+genotype [21, 31, 17]
+Initializing network...
+val_loss_min:  0.1345
+val_acc_max:  0.9637
+genotype [21, 8, 38]
+Initializing network...
+val_loss_min:  0.1853
+val_acc_max:  0.9415
+genotype [19, 47, 33]
+Initializing network...
+val_loss_min:  0.1392
+val_acc_max:  0.9595
+genotype [6, 34, 24]
+Initializing network...
+val_loss_min:  0.1468
+val_acc_max:  0.957
+genotype [6, 34, 8]
+Initializing network...
+val_loss_min:  0.1297
+val_acc_max:  0.9607
+genotype [29, 33, 22]
+Initializing network...
+val_loss_min:  0.1353
+val_acc_max:  0.9598
+genotype [19, 23, 19]
+Initializing network...
+val_loss_min:  0.1267
+val_acc_max:  0.9628
+population saved
+population [[7, 44, 11], [7, 39, 12], [4, 39, 47], [30, 33, 6], [21, 31, 38], [4, 39, 47], [4, 39, 47], [4, 39, 47], [4, 39, 47], [21, 31, 38], [7, 44, 43], [30, 33, 6], [21, 31, 38], [19, 47, 24], [7, 44, 43], [6, 47, 24], [30, 33, 22], [2, 39, 19], [6, 34, 33], [7, 44, 11], [30, 33, 22], [4, 39, 47], [17, 39, 12], [2, 39, 19], [2, 39, 19], [2, 39, 19], [30, 33, 22], [19, 23, 19], [6, 34, 33], [30, 47, 29]]
+[0.1212, 0.1194, 0.1229, 0.1228, 0.1233, 0.1229, 0.1229, 0.1229, 0.1229, 0.1233, 0.1234, 0.1228, 0.1233, 0.1252, 0.1234, 0.124, 0.1269, 0.1274, 0.1265, 0.1212, 0.1269, 0.1229, 0.1196, 0.1274, 0.1274, 0.1274, 0.1269, 0.1267, 0.1265, 0.1312]
+min: 0.1194, max:0.1312, avg:0.12438333333333336
+9  	12    	0.124383	0.00263731	0.1194	0.1312
+genotype [7, 44, 33]
+Initializing network...
+val_loss_min:  0.1429
+val_acc_max:  0.9558
+genotype [26, 44, 6]
+Initializing network...
+val_loss_min:  0.1304
+val_acc_max:  0.965
+genotype [4, 21, 1]
+Initializing network...
+val_loss_min:  0.2139
+val_acc_max:  0.9442
+genotype [4, 39, 29]
+Initializing network...
+val_loss_min:  0.1335
+val_acc_max:  0.9586
+genotype [20, 44, 47]
+Initializing network...
+val_loss_min:  0.1349
+val_acc_max:  0.9607
+genotype [30, 46, 47]
+Initializing network...
+val_loss_min:  0.1252
+val_acc_max:  0.9653
+genotype [21, 31, 6]
+Initializing network...
+val_loss_min:  0.1236
+val_acc_max:  0.964
+genotype [21, 19, 25]
+Initializing network...
+val_loss_min:  0.1511
+val_acc_max:  0.9543
+genotype [6, 47, 12]
+Initializing network...
+val_loss_min:  0.1406
+val_acc_max:  0.9601
+genotype [6, 34, 19]
+Initializing network...
+val_loss_min:  0.1248
+val_acc_max:  0.9631
+genotype [19, 23, 33]
+Initializing network...
+val_loss_min:  0.1293
+val_acc_max:  0.9601
+genotype [30, 39, 37]
+Initializing network...
+val_loss_min:  0.1365
+val_acc_max:  0.9589
+genotype [2, 33, 22]
+Initializing network...
+val_loss_min:  0.1382
+val_acc_max:  0.957
+genotype [2, 45, 19]
+Initializing network...
+val_loss_min:  0.1361
+val_acc_max:  0.961
+genotype [24, 39, 19]
+Initializing network...
+val_loss_min:  0.1308
+val_acc_max:  0.9631
+genotype [2, 1, 19]
+Initializing network...
+val_loss_min:  1.2689
+val_acc_max:  0.5433
+population saved
+population [[17, 39, 12], [7, 39, 12], [4, 39, 47], [7, 44, 11], [21, 31, 38], [30, 33, 6], [4, 39, 47], [4, 39, 47], [4, 39, 47], [4, 39, 47], [7, 44, 43], [30, 33, 6], [21, 31, 38], [21, 31, 6], [7, 44, 43], [7, 44, 43], [7, 44, 43], [2, 39, 19], [19, 47, 24], [7, 44, 11], [6, 34, 19], [4, 39, 47], [17, 39, 12], [30, 33, 22], [2, 39, 19], [2, 39, 19], [30, 33, 22], [19, 23, 19], [6, 34, 33], [30, 47, 29]]
+[0.1196, 0.1194, 0.1229, 0.1212, 0.1233, 0.1228, 0.1229, 0.1229, 0.1229, 0.1229, 0.1234, 0.1228, 0.1233, 0.1236, 0.1234, 0.1234, 0.1234, 0.1274, 0.1252, 0.1212, 0.1248, 0.1229, 0.1196, 0.1269, 0.1274, 0.1274, 0.1269, 0.1267, 0.1265, 0.1312]
+min: 0.1194, max:0.1312, avg:0.12394000000000002
+10 	16    	0.12394 	0.00262762	0.1194	0.1312
+genotype [25, 39, 12]
+Initializing network...
+val_loss_min:  0.1255
+val_acc_max:  0.9637
+genotype [17, 44, 11]
+Initializing network...
+val_loss_min:  0.125
+val_acc_max:  0.9637
+genotype [30, 30, 47]
+Initializing network...
+val_loss_min:  0.1304
+val_acc_max:  0.958
+genotype [4, 39, 6]
+Initializing network...
+val_loss_min:  0.1413
+val_acc_max:  0.957
+genotype [6, 39, 47]
+Initializing network...
+val_loss_min:  0.1319
+val_acc_max:  0.9625
+genotype [30, 38, 47]
+Initializing network...
+val_loss_min:  0.1409
+val_acc_max:  0.9598
+genotype [4, 31, 38]
+Initializing network...
+val_loss_min:  0.1343
+val_acc_max:  0.9601
+genotype [6, 31, 43]
+Initializing network...
+val_loss_min:  0.1421
+val_acc_max:  0.9586
+genotype [7, 1, 38]
+Initializing network...
+val_loss_min:  1.2141
+val_acc_max:  0.5853
+genotype [27, 44, 43]
+Initializing network...
+val_loss_min:  0.1286
+val_acc_max:  0.9592
+genotype [7, 31, 6]
+Initializing network...
+val_loss_min:  0.114
+val_acc_max:  0.9634
+genotype [21, 44, 4]
+Initializing network...
+val_loss_min:  0.1258
+val_acc_max:  0.9616
+genotype [6, 47, 28]
+Initializing network...
+val_loss_min:  0.1433
+val_acc_max:  0.9613
+genotype [19, 34, 27]
+Initializing network...
+val_loss_min:  0.1371
+val_acc_max:  0.9595
+genotype [6, 17, 34]
+Initializing network...
+val_loss_min:  0.1472
+val_acc_max:  0.9586
+genotype [30, 23, 33]
+Initializing network...
+val_loss_min:  0.1383
+val_acc_max:  0.9567
+genotype [16, 1, 19]
+Initializing network...
+val_loss_min:  1.2161
+val_acc_max:  0.5472
+genotype [3, 21, 29]
+Initializing network...
+val_loss_min:  0.1299
+val_acc_max:  0.9637
+population saved
+population [[7, 39, 12], [7, 39, 12], [4, 39, 47], [7, 39, 12], [7, 44, 11], [30, 33, 6], [4, 39, 47], [4, 39, 47], [4, 39, 47], [4, 39, 47], [4, 39, 47], [30, 33, 6], [21, 31, 38], [21, 31, 6], [7, 44, 43], [7, 44, 43], [7, 44, 43], [2, 39, 19], [7, 31, 6], [7, 44, 11], [6, 34, 19], [4, 39, 47], [17, 39, 12], [30, 33, 22], [30, 33, 22], [30, 33, 22], [30, 33, 22], [19, 23, 19], [6, 34, 33], [3, 21, 29]]
+[0.1194, 0.1194, 0.1229, 0.1194, 0.1212, 0.1228, 0.1229, 0.1229, 0.1229, 0.1229, 0.1229, 0.1228, 0.1233, 0.1236, 0.1234, 0.1234, 0.1234, 0.1274, 0.114, 0.1212, 0.1248, 0.1229, 0.1196, 0.1269, 0.1269, 0.1269, 0.1269, 0.1267, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.12333666666666668
+11 	18    	0.123337	0.00312298	0.114 	0.1299
+genotype [7, 39, 32]
+Initializing network...
+val_loss_min:  0.1321
+val_acc_max:  0.9613
+genotype [17, 39, 11]
+Initializing network...
+val_loss_min:  0.1267
+val_acc_max:  0.964
+genotype [7, 44, 12]
+Initializing network...
+val_loss_min:  0.1293
+val_acc_max:  0.9604
+genotype [30, 33, 47]
+Initializing network...
+val_loss_min:  0.1408
+val_acc_max:  0.9586
+genotype [4, 35, 15]
+Initializing network...
+val_loss_min:  0.1267
+val_acc_max:  0.9607
+genotype [4, 11, 35]
+Initializing network...
+val_loss_min:  0.1572
+val_acc_max:  0.9528
+genotype [21, 34, 19]
+Initializing network...
+val_loss_min:  0.14
+val_acc_max:  0.957
+genotype [30, 34, 33]
+Initializing network...
+val_loss_min:  0.1274
+val_acc_max:  0.9634
+genotype [22, 33, 14]
+Initializing network...
+val_loss_min:  0.1421
+val_acc_max:  0.9564
+genotype [2, 39, 29]
+Initializing network...
+val_loss_min:  0.1347
+val_acc_max:  0.9616
+genotype [3, 21, 19]
+Initializing network...
+val_loss_min:  0.1429
+val_acc_max:  0.9586
+population saved
+population [[7, 31, 6], [7, 39, 12], [4, 39, 47], [7, 39, 12], [7, 44, 11], [30, 33, 6], [7, 44, 11], [4, 39, 47], [4, 39, 47], [4, 39, 47], [4, 39, 47], [30, 33, 6], [21, 31, 38], [4, 39, 47], [4, 39, 47], [4, 39, 47], [21, 31, 38], [7, 44, 43], [7, 31, 6], [7, 44, 11], [6, 34, 19], [7, 31, 6], [17, 39, 12], [19, 23, 19], [30, 33, 22], [30, 33, 22], [30, 33, 22], [19, 23, 19], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.1194, 0.1229, 0.1194, 0.1212, 0.1228, 0.1212, 0.1229, 0.1229, 0.1229, 0.1229, 0.1228, 0.1233, 0.1229, 0.1229, 0.1229, 0.1233, 0.1234, 0.114, 0.1212, 0.1248, 0.114, 0.1196, 0.1267, 0.1269, 0.1269, 0.1269, 0.1267, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.12260333333333336
+12 	11    	0.122603	0.00375095	0.114 	0.1299
+genotype [9, 39, 30]
+Initializing network...
+val_loss_min:  0.1355
+val_acc_max:  0.9604
+genotype [7, 39, 41]
+Initializing network...
+val_loss_min:  0.146
+val_acc_max:  0.961
+genotype [22, 39, 41]
+Initializing network...
+val_loss_min:  0.1302
+val_acc_max:  0.9637
+genotype [7, 44, 27]
+Initializing network...
+val_loss_min:  0.1325
+val_acc_max:  0.9607
+genotype [13, 39, 6]
+Initializing network...
+val_loss_min:  0.1224
+val_acc_max:  0.9656
+genotype [4, 39, 23]
+Initializing network...
+val_loss_min:  0.1426
+val_acc_max:  0.9583
+genotype [4, 39, 28]
+Initializing network...
+val_loss_min:  0.1304
+val_acc_max:  0.9595
+genotype [30, 39, 47]
+Initializing network...
+val_loss_min:  0.1366
+val_acc_max:  0.9576
+genotype [4, 9, 47]
+Initializing network...
+val_loss_min:  0.1732
+val_acc_max:  0.9482
+genotype [30, 31, 43]
+Initializing network...
+val_loss_min:  0.1317
+val_acc_max:  0.9628
+genotype [7, 44, 38]
+Initializing network...
+val_loss_min:  0.132
+val_acc_max:  0.9616
+genotype [6, 34, 31]
+Initializing network...
+val_loss_min:  0.1329
+val_acc_max:  0.9622
+population saved
+population [[7, 31, 6], [7, 31, 6], [4, 39, 47], [7, 39, 12], [7, 44, 11], [30, 33, 6], [7, 44, 11], [4, 39, 47], [7, 44, 11], [30, 33, 6], [4, 39, 47], [13, 39, 6], [21, 31, 38], [4, 39, 47], [4, 39, 47], [4, 39, 47], [21, 31, 38], [7, 44, 43], [7, 31, 6], [7, 44, 11], [6, 34, 19], [7, 31, 6], [17, 39, 12], [19, 23, 19], [19, 23, 19], [19, 23, 19], [30, 33, 22], [19, 23, 19], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.1229, 0.1194, 0.1212, 0.1228, 0.1212, 0.1229, 0.1212, 0.1228, 0.1229, 0.1224, 0.1233, 0.1229, 0.1229, 0.1229, 0.1233, 0.1234, 0.114, 0.1212, 0.1248, 0.114, 0.1196, 0.1267, 0.1267, 0.1267, 0.1269, 0.1267, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.12233666666666669
+13 	12    	0.122337	0.00400911	0.114 	0.1299
+genotype [18, 31, 25]
+Initializing network...
+val_loss_min:  0.1432
+val_acc_max:  0.9586
+genotype [7, 46, 12]
+Initializing network...
+val_loss_min:  0.1316
+val_acc_max:  0.9644
+genotype [23, 39, 3]
+Initializing network...
+val_loss_min:  0.1289
+val_acc_max:  0.9628
+genotype [30, 42, 6]
+Initializing network...
+val_loss_min:  0.1331
+val_acc_max:  0.9604
+genotype [30, 39, 6]
+Initializing network...
+val_loss_min:  0.1255
+val_acc_max:  0.965
+genotype [4, 33, 6]
+Initializing network...
+val_loss_min:  0.134
+val_acc_max:  0.9595
+genotype [30, 40, 27]
+Initializing network...
+val_loss_min:  0.1297
+val_acc_max:  0.961
+genotype [4, 7, 47]
+Initializing network...
+val_loss_min:  0.1861
+val_acc_max:  0.9439
+genotype [4, 39, 38]
+Initializing network...
+val_loss_min:  0.1315
+val_acc_max:  0.9647
+genotype [21, 31, 25]
+Initializing network...
+val_loss_min:  0.1305
+val_acc_max:  0.9589
+genotype [19, 12, 19]
+Initializing network...
+val_loss_min:  0.1355
+val_acc_max:  0.9583
+genotype [19, 18, 19]
+Initializing network...
+val_loss_min:  0.1462
+val_acc_max:  0.9576
+genotype [30, 21, 29]
+Initializing network...
+val_loss_min:  0.1469
+val_acc_max:  0.9549
+genotype [30, 33, 16]
+Initializing network...
+val_loss_min:  0.1427
+val_acc_max:  0.9595
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 39, 12], [7, 44, 11], [30, 33, 6], [7, 44, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [4, 39, 47], [13, 39, 6], [21, 31, 38], [4, 39, 47], [4, 39, 47], [4, 39, 47], [21, 31, 38], [7, 44, 43], [7, 31, 6], [7, 44, 11], [21, 31, 38], [7, 31, 6], [17, 39, 12], [6, 34, 33], [19, 23, 19], [19, 23, 19], [30, 33, 22], [19, 23, 8], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.1194, 0.1212, 0.1228, 0.1212, 0.1212, 0.1212, 0.1212, 0.1229, 0.1224, 0.1233, 0.1229, 0.1229, 0.1229, 0.1233, 0.1234, 0.114, 0.1212, 0.1233, 0.114, 0.1196, 0.1265, 0.1267, 0.1267, 0.1269, 0.1257, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.12184000000000002
+14 	14    	0.12184 	0.00420893	0.114 	0.1299
+genotype [7, 48, 6]
+Initializing network...
+val_loss_min:  0.1341
+val_acc_max:  0.9619
+genotype [30, 31, 6]
+Initializing network...
+val_loss_min:  0.1305
+val_acc_max:  0.9637
+genotype [13, 31, 17]
+Initializing network...
+val_loss_min:  0.1375
+val_acc_max:  0.9631
+genotype [7, 1, 11]
+Initializing network...
+val_loss_min:  1.3394
+val_acc_max:  0.5323
+genotype [7, 44, 6]
+Initializing network...
+val_loss_min:  0.1335
+val_acc_max:  0.9619
+genotype [13, 39, 11]
+Initializing network...
+val_loss_min:  0.1325
+val_acc_max:  0.9616
+genotype [21, 31, 45]
+Initializing network...
+val_loss_min:  0.1359
+val_acc_max:  0.961
+genotype [7, 44, 8]
+Initializing network...
+val_loss_min:  0.1313
+val_acc_max:  0.9619
+genotype [25, 23, 43]
+Initializing network...
+val_loss_min:  0.1436
+val_acc_max:  0.958
+genotype [6, 34, 30]
+Initializing network...
+val_loss_min:  0.1333
+val_acc_max:  0.9598
+genotype [19, 46, 17]
+Initializing network...
+val_loss_min:  0.1238
+val_acc_max:  0.9662
+genotype [3, 33, 22]
+Initializing network...
+val_loss_min:  0.1395
+val_acc_max:  0.9576
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 39, 12], [7, 39, 12], [30, 33, 6], [7, 44, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [13, 39, 6], [21, 31, 38], [4, 39, 47], [30, 33, 6], [4, 39, 47], [4, 39, 47], [4, 39, 47], [7, 31, 6], [7, 44, 11], [21, 31, 38], [7, 31, 6], [17, 39, 12], [6, 34, 33], [19, 23, 19], [6, 34, 33], [19, 23, 19], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.1194, 0.1194, 0.1228, 0.1212, 0.1212, 0.1212, 0.1212, 0.1212, 0.1224, 0.1233, 0.1229, 0.1228, 0.1229, 0.1229, 0.1229, 0.114, 0.1212, 0.1233, 0.114, 0.1196, 0.1265, 0.1267, 0.1265, 0.1267, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.12161333333333334
+15 	12    	0.121613	0.00415241	0.114 	0.1299
+genotype [24, 16, 38]
+Initializing network...
+val_loss_min:  0.1399
+val_acc_max:  0.9586
+genotype [21, 46, 17]
+Initializing network...
+val_loss_min:  0.1294
+val_acc_max:  0.961
+genotype [19, 31, 38]
+Initializing network...
+val_loss_min:  0.1365
+val_acc_max:  0.9576
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 39, 12], [7, 31, 6], [7, 39, 12], [17, 39, 12], [7, 44, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [13, 39, 6], [30, 33, 6], [30, 33, 6], [4, 39, 47], [7, 31, 6], [7, 44, 11], [4, 39, 47], [7, 31, 6], [17, 39, 12], [6, 34, 33], [6, 34, 33], [6, 34, 33], [6, 34, 33], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.1194, 0.114, 0.1194, 0.1196, 0.1212, 0.1212, 0.1212, 0.1212, 0.1212, 0.1212, 0.1224, 0.1228, 0.1228, 0.1229, 0.114, 0.1212, 0.1229, 0.114, 0.1196, 0.1265, 0.1265, 0.1265, 0.1265, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.12081333333333336
+16 	3     	0.120813	0.0044916 	0.114 	0.1299
+genotype [1, 31, 6]
+Initializing network...
+val_loss_min:  0.1388
+val_acc_max:  0.9576
+genotype [10, 39, 12]
+Initializing network...
+val_loss_min:  0.134
+val_acc_max:  0.961
+genotype [7, 14, 11]
+Initializing network...
+val_loss_min:  0.1594
+val_acc_max:  0.9503
+genotype [14, 48, 11]
+Initializing network...
+val_loss_min:  0.1152
+val_acc_max:  0.9668
+genotype [7, 44, 41]
+Initializing network...
+val_loss_min:  0.1241
+val_acc_max:  0.964
+genotype [13, 39, 37]
+Initializing network...
+val_loss_min:  0.1387
+val_acc_max:  0.9601
+genotype [6, 34, 9]
+Initializing network...
+val_loss_min:  0.1358
+val_acc_max:  0.9567
+genotype [6, 21, 29]
+Initializing network...
+val_loss_min:  0.1472
+val_acc_max:  0.9555
+genotype [3, 34, 33]
+Initializing network...
+val_loss_min:  0.1403
+val_acc_max:  0.9601
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [17, 39, 12], [7, 39, 12], [17, 39, 12], [17, 39, 12], [7, 44, 11], [14, 48, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [7, 44, 11], [4, 39, 47], [7, 31, 6], [7, 44, 11], [30, 33, 6], [7, 31, 6], [17, 39, 12], [19, 46, 17], [6, 34, 33], [6, 34, 33], [6, 34, 33], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1196, 0.1194, 0.1196, 0.1196, 0.1212, 0.1152, 0.1212, 0.1212, 0.1212, 0.1212, 0.1229, 0.114, 0.1212, 0.1228, 0.114, 0.1196, 0.1238, 0.1265, 0.1265, 0.1265, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.11984666666666667
+17 	9     	0.119847	0.00471916	0.114 	0.1299
+genotype [7, 31, 43]
+Initializing network...
+val_loss_min:  0.1351
+val_acc_max:  0.9586
+genotype [7, 19, 30]
+Initializing network...
+val_loss_min:  0.1656
+val_acc_max:  0.9534
+genotype [17, 45, 12]
+Initializing network...
+val_loss_min:  0.1387
+val_acc_max:  0.9637
+genotype [11, 44, 11]
+Initializing network...
+val_loss_min:  0.126
+val_acc_max:  0.9607
+genotype [30, 33, 3]
+Initializing network...
+val_loss_min:  0.1302
+val_acc_max:  0.961
+genotype [19, 14, 17]
+Initializing network...
+val_loss_min:  0.1475
+val_acc_max:  0.9561
+genotype [6, 4, 33]
+Initializing network...
+val_loss_min:  0.3812
+val_acc_max:  0.8952
+genotype [12, 34, 45]
+Initializing network...
+val_loss_min:  0.1389
+val_acc_max:  0.9604
+genotype [6, 47, 29]
+Initializing network...
+val_loss_min:  0.1352
+val_acc_max:  0.9625
+genotype [3, 34, 4]
+Initializing network...
+val_loss_min:  0.1303
+val_acc_max:  0.9619
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [14, 48, 11], [7, 39, 12], [17, 39, 12], [14, 48, 11], [7, 44, 11], [7, 44, 11], [7, 39, 12], [7, 44, 11], [7, 44, 11], [7, 31, 6], [7, 44, 11], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 17], [19, 46, 17], [6, 34, 33], [6, 34, 33], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1152, 0.1194, 0.1196, 0.1152, 0.1212, 0.1212, 0.1194, 0.1212, 0.1212, 0.114, 0.1212, 0.1212, 0.114, 0.1196, 0.1238, 0.1238, 0.1265, 0.1265, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.11901333333333335
+18 	10    	0.119013	0.00479804	0.114 	0.1299
+genotype [11, 50, 6]
+Initializing network...
+val_loss_min:  0.139
+val_acc_max:  0.9604
+genotype [23, 39, 12]
+Initializing network...
+val_loss_min:  0.1221
+val_acc_max:  0.9631
+genotype [7, 48, 11]
+Initializing network...
+val_loss_min:  0.1335
+val_acc_max:  0.9592
+genotype [7, 39, 28]
 Initializing network...
 val_loss_min:  0.1272
-val_acc_max:  0.9631
-genotype [30, 50, 44]
+val_acc_max:  0.9656
+genotype [19, 13, 17]
 Initializing network...
-val_loss_min:  0.1282
+val_loss_min:  0.1508
+val_acc_max:  0.9528
+genotype [3, 21, 14]
+Initializing network...
+val_loss_min:  0.1325
 val_acc_max:  0.9607
-genotype [23, 27, 21]
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [14, 48, 11], [14, 48, 11], [7, 44, 11], [7, 44, 11], [7, 39, 12], [17, 39, 12], [7, 44, 11], [7, 31, 6], [7, 44, 11], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 17], [19, 46, 17], [6, 34, 33], [6, 34, 33], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1152, 0.1152, 0.1212, 0.1212, 0.1194, 0.1196, 0.1212, 0.114, 0.1212, 0.1212, 0.114, 0.1196, 0.1238, 0.1238, 0.1265, 0.1265, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.11859333333333336
+19 	6     	0.118593	0.00493518	0.114 	0.1299
+genotype [7, 17, 6]
 Initializing network...
-val_loss_min:  0.1422
-val_acc_max:  0.9586
-genotype [23, 33, 8]
+val_loss_min:  0.1423
+val_acc_max:  0.9604
+genotype [3, 31, 6]
 Initializing network...
-val_loss_min:  0.1318
-val_acc_max:  0.9607
-genotype [23, 23, 23]
+val_loss_min:  0.1508
+val_acc_max:  0.9601
+genotype [7, 31, 39]
 Initializing network...
-val_loss_min:  0.1459
-val_acc_max:  0.9576
-genotype [23, 16, 33]
+val_loss_min:  0.1283
+val_acc_max:  0.9628
+genotype [30, 31, 35]
+Initializing network...
+val_loss_min:  0.1353
+val_acc_max:  0.9604
+genotype [14, 39, 12]
+Initializing network...
+val_loss_min:  0.1235
+val_acc_max:  0.9644
+genotype [7, 48, 49]
+Initializing network...
+val_loss_min:  0.1359
+val_acc_max:  0.964
+genotype [7, 44, 26]
+Initializing network...
+val_loss_min:  0.127
+val_acc_max:  0.9616
+genotype [5, 21, 29]
+Initializing network...
+val_loss_min:  0.1434
+val_acc_max:  0.958
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [14, 48, 11], [7, 44, 11], [7, 44, 11], [7, 39, 12], [17, 39, 12], [17, 39, 12], [7, 31, 6], [7, 44, 11], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1152, 0.1212, 0.1212, 0.1194, 0.1196, 0.1196, 0.114, 0.1212, 0.1212, 0.114, 0.1196, 0.1238, 0.1238, 0.1238, 0.1265, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.11841000000000003
+20 	8     	0.11841 	0.00482378	0.114 	0.1299
+genotype [7, 11, 45]
+Initializing network...
+val_loss_min:  0.1662
+val_acc_max:  0.9485
+genotype [30, 3, 27]
+Initializing network...
+val_loss_min:  0.4788
+val_acc_max:  0.8635
+genotype [7, 16, 6]
 Initializing network...
 val_loss_min:  0.1387
 val_acc_max:  0.9567
-population saved
-population [[30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [30, 39, 5], [17, 48, 5], [17, 48, 5], [17, 48, 5], [17, 31, 5], [17, 31, 5], [17, 31, 5], [30, 39, 5], [30, 50, 8], [30, 50, 8], [30, 50, 8], [30, 50, 8], [30, 50, 5], [21, 50, 5], [30, 50, 5], [30, 50, 5], [30, 50, 5], [23, 27, 8], [7, 50, 5], [23, 50, 5], [23, 50, 5], [24, 17, 46], [24, 17, 46]]
-[0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1149, 0.1157, 0.1157, 0.1157, 0.1164, 0.1164, 0.1164, 0.1149, 0.1187, 0.1187, 0.1187, 0.1187, 0.1221, 0.1214, 0.1221, 0.1221, 0.1221, 0.1223, 0.1215, 0.1237, 0.1237, 0.1287, 0.1287]
-min: 0.1149, max:0.1287, avg:0.11878666666666667
-21 	11    	0.118787	0.00406995	0.1149	0.1287
-genotype [19, 39, 46]
+genotype [25, 31, 27]
 Initializing network...
-val_loss_min:  0.1285
+val_loss_min:  0.1331
+val_acc_max:  0.958
+genotype [22, 31, 46]
+Initializing network...
+val_loss_min:  0.1418
+val_acc_max:  0.9589
+genotype [7, 40, 34]
+Initializing network...
+val_loss_min:  0.1431
 val_acc_max:  0.9598
-genotype [30, 39, 13]
+genotype [14, 48, 12]
+Initializing network...
+val_loss_min:  0.1233
+val_acc_max:  0.9628
+genotype [17, 23, 12]
+Initializing network...
+val_loss_min:  0.1266
+val_acc_max:  0.9607
+genotype [15, 44, 11]
+Initializing network...
+val_loss_min:  0.1305
+val_acc_max:  0.9628
+genotype [7, 44, 7]
+Initializing network...
+val_loss_min:  0.1221
+val_acc_max:  0.9647
+genotype [19, 46, 11]
+Initializing network...
+val_loss_min:  0.1213
+val_acc_max:  0.9631
+genotype [19, 21, 17]
+Initializing network...
+val_loss_min:  0.136
+val_acc_max:  0.9598
+genotype [19, 25, 17]
+Initializing network...
+val_loss_min:  0.1604
+val_acc_max:  0.9543
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [14, 48, 11], [7, 31, 6], [7, 44, 11], [7, 39, 12], [17, 39, 12], [17, 39, 12], [7, 31, 6], [7, 44, 11], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1152, 0.114, 0.1212, 0.1194, 0.1196, 0.1196, 0.114, 0.1212, 0.1212, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.11799666666666671
+21 	13    	0.117997	0.00464582	0.114 	0.1299
+genotype [24, 36, 6]
+Initializing network...
+val_loss_min:  0.1399
+val_acc_max:  0.9619
+genotype [30, 31, 33]
+Initializing network...
+val_loss_min:  0.1269
+val_acc_max:  0.9598
+genotype [23, 31, 42]
+Initializing network...
+val_loss_min:  0.134
+val_acc_max:  0.9607
+genotype [7, 31, 5]
+Initializing network...
+val_loss_min:  0.1277
+val_acc_max:  0.961
+genotype [7, 31, 11]
+Initializing network...
+val_loss_min:  0.1274
+val_acc_max:  0.9622
+genotype [14, 48, 6]
+Initializing network...
+val_loss_min:  0.1364
+val_acc_max:  0.9628
+genotype [7, 39, 10]
+Initializing network...
+val_loss_min:  0.1319
+val_acc_max:  0.9644
+genotype [24, 50, 39]
+Initializing network...
+val_loss_min:  0.1267
+val_acc_max:  0.9634
+genotype [19, 17, 17]
+Initializing network...
+val_loss_min:  0.1477
+val_acc_max:  0.9531
+genotype [28, 5, 33]
+Initializing network...
+val_loss_min:  0.2486
+val_acc_max:  0.9272
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [14, 48, 11], [7, 31, 6], [7, 44, 11], [7, 39, 12], [17, 39, 12], [17, 39, 12], [7, 31, 6], [17, 39, 12], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1152, 0.114, 0.1212, 0.1194, 0.1196, 0.1196, 0.114, 0.1196, 0.1212, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.11794333333333337
+22 	10    	0.117943	0.00461784	0.114 	0.1299
+genotype [7, 31, 36]
+Initializing network...
+val_loss_min:  0.1318
+val_acc_max:  0.9616
+genotype [7, 9, 6]
+Initializing network...
+val_loss_min:  0.1811
+val_acc_max:  0.9418
+genotype [7, 42, 6]
+Initializing network...
+val_loss_min:  0.1346
+val_acc_max:  0.9592
+genotype [7, 3, 11]
+Initializing network...
+val_loss_min:  0.3943
+val_acc_max:  0.8906
+genotype [14, 48, 42]
+Initializing network...
+val_loss_min:  0.1336
+val_acc_max:  0.9598
+genotype [4, 40, 1]
+Initializing network...
+val_loss_min:  0.1769
+val_acc_max:  0.9485
+genotype [17, 39, 50]
+Initializing network...
+val_loss_min:  0.1333
+val_acc_max:  0.961
+genotype [17, 35, 12]
+Initializing network...
+val_loss_min:  0.1342
+val_acc_max:  0.9595
+genotype [7, 39, 9]
+Initializing network...
+val_loss_min:  0.1354
+val_acc_max:  0.9631
+genotype [19, 16, 17]
+Initializing network...
+val_loss_min:  0.1404
+val_acc_max:  0.9543
+genotype [19, 43, 17]
+Initializing network...
+val_loss_min:  0.1263
+val_acc_max:  0.9622
+genotype [6, 50, 29]
+Initializing network...
+val_loss_min:  0.1354
+val_acc_max:  0.9631
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 44, 11], [7, 39, 12], [17, 39, 12], [17, 39, 12], [7, 31, 6], [17, 39, 12], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [3, 21, 29]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1212, 0.1194, 0.1196, 0.1196, 0.114, 0.1196, 0.1212, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1299]
+min: 0.114, max:0.1299, avg:0.11790333333333339
+23 	12    	0.117903	0.00464654	0.114 	0.1299
+genotype [10, 46, 25]
+Initializing network...
+val_loss_min:  0.1287
+val_acc_max:  0.9616
+genotype [7, 18, 20]
+Initializing network...
+val_loss_min:  0.15
+val_acc_max:  0.9534
+genotype [7, 18, 6]
+Initializing network...
+val_loss_min:  0.1301
+val_acc_max:  0.958
+genotype [7, 21, 11]
+Initializing network...
+val_loss_min:  0.1419
+val_acc_max:  0.9573
+genotype [19, 46, 50]
+Initializing network...
+val_loss_min:  0.1377
+val_acc_max:  0.9616
+genotype [19, 46, 41]
+Initializing network...
+val_loss_min:  0.1328
+val_acc_max:  0.9625
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 44, 11], [7, 31, 6], [7, 39, 12], [17, 39, 12], [7, 31, 6], [17, 39, 12], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [30, 34, 33]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1212, 0.114, 0.1194, 0.1196, 0.114, 0.1196, 0.1212, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1274]
+min: 0.114, max:0.1274, avg:0.1176333333333334
+24 	6     	0.117633	0.00448756	0.114 	0.1274
+genotype [17, 31, 6]
+Initializing network...
+val_loss_min:  0.129
+val_acc_max:  0.9607
+genotype [22, 31, 6]
+Initializing network...
+val_loss_min:  0.1242
+val_acc_max:  0.9628
+genotype [7, 22, 39]
+Initializing network...
+val_loss_min:  0.14
+val_acc_max:  0.9558
+genotype [7, 31, 32]
+Initializing network...
+val_loss_min:  0.1319
+val_acc_max:  0.9607
+genotype [11, 39, 20]
+Initializing network...
+val_loss_min:  0.1272
+val_acc_max:  0.961
+genotype [30, 26, 12]
+Initializing network...
+val_loss_min:  0.1323
+val_acc_max:  0.9637
+genotype [7, 44, 28]
+Initializing network...
+val_loss_min:  0.1365
+val_acc_max:  0.9598
+genotype [19, 46, 12]
+Initializing network...
+val_loss_min:  0.1273
+val_acc_max:  0.9598
+genotype [29, 46, 17]
+Initializing network...
+val_loss_min:  0.1326
+val_acc_max:  0.9631
+genotype [6, 34, 20]
+Initializing network...
+val_loss_min:  0.128
+val_acc_max:  0.9613
+genotype [30, 29, 33]
+Initializing network...
+val_loss_min:  0.1365
+val_acc_max:  0.9625
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 39, 12], [7, 31, 6], [17, 39, 12], [7, 44, 11], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [30, 34, 33]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1194, 0.114, 0.1196, 0.1212, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1274]
+min: 0.114, max:0.1274, avg:0.11720666666666672
+25 	11    	0.117207	0.0045037 	0.114 	0.1274
+genotype [7, 46, 40]
+Initializing network...
+val_loss_min:  0.1322
+val_acc_max:  0.961
+genotype [14, 31, 34]
+Initializing network...
+val_loss_min:  0.1453
+val_acc_max:  0.9561
+genotype [7, 7, 12]
+Initializing network...
+val_loss_min:  0.2069
+val_acc_max:  0.9385
+genotype [23, 9, 12]
+Initializing network...
+val_loss_min:  0.1718
+val_acc_max:  0.9494
+genotype [19, 46, 8]
+Initializing network...
+val_loss_min:  0.1256
+val_acc_max:  0.9634
+genotype [6, 34, 36]
+Initializing network...
+val_loss_min:  0.1324
+val_acc_max:  0.9589
+genotype [30, 27, 33]
+Initializing network...
+val_loss_min:  0.1337
+val_acc_max:  0.9595
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 39, 12], [7, 31, 6], [7, 31, 6], [17, 39, 12], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [30, 34, 33]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1194, 0.114, 0.114, 0.1196, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1274]
+min: 0.114, max:0.1274, avg:0.11696666666666672
+26 	7     	0.116967	0.00447626	0.114 	0.1274
+genotype [7, 26, 6]
+Initializing network...
+val_loss_min:  0.1347
+val_acc_max:  0.9601
+genotype [7, 31, 49]
+Initializing network...
+val_loss_min:  0.1404
+val_acc_max:  0.9589
+genotype [7, 39, 30]
+Initializing network...
+val_loss_min:  0.1304
+val_acc_max:  0.9619
+genotype [17, 46, 11]
+Initializing network...
+val_loss_min:  0.1274
+val_acc_max:  0.9628
+genotype [19, 25, 4]
+Initializing network...
+val_loss_min:  0.1269
+val_acc_max:  0.9616
+genotype [19, 46, 10]
+Initializing network...
+val_loss_min:  0.1386
+val_acc_max:  0.9613
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [17, 39, 12], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [30, 34, 33]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1196, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1274]
+min: 0.114, max:0.1274, avg:0.11678666666666673
+27 	6     	0.116787	0.00448336	0.114 	0.1274
+genotype [18, 31, 43]
+Initializing network...
+val_loss_min:  0.1477
+val_acc_max:  0.9564
+genotype [30, 29, 42]
+Initializing network...
+val_loss_min:  0.1256
+val_acc_max:  0.964
+genotype [7, 31, 12]
+Initializing network...
+val_loss_min:  0.1244
+val_acc_max:  0.9589
+genotype [6, 26, 6]
+Initializing network...
+val_loss_min:  0.1361
+val_acc_max:  0.9576
+genotype [23, 46, 38]
+Initializing network...
+val_loss_min:  0.1359
+val_acc_max:  0.961
+genotype [19, 42, 17]
+Initializing network...
+val_loss_min:  0.1259
+val_acc_max:  0.9634
+genotype [19, 11, 17]
+Initializing network...
+val_loss_min:  0.1642
+val_acc_max:  0.9543
+genotype [30, 34, 1]
+Initializing network...
+val_loss_min:  0.1579
+val_acc_max:  0.9519
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [17, 39, 12], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 17], [19, 46, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [30, 34, 33]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1196, 0.114, 0.1196, 0.1213, 0.1238, 0.1238, 0.1238, 0.1238, 0.1265, 0.1274]
+min: 0.114, max:0.1274, avg:0.11678666666666673
+28 	8     	0.116787	0.00448336	0.114 	0.1274
+genotype [17, 31, 49]
+Initializing network...
+val_loss_min:  0.1364
+val_acc_max:  0.9598
+genotype [30, 31, 49]
+Initializing network...
+val_loss_min:  0.1382
+val_acc_max:  0.9607
+genotype [7, 31, 25]
+Initializing network...
+val_loss_min:  0.1271
+val_acc_max:  0.9601
+genotype [17, 43, 6]
+Initializing network...
+val_loss_min:  0.129
+val_acc_max:  0.9653
+genotype [21, 39, 37]
+Initializing network...
+val_loss_min:  0.1412
+val_acc_max:  0.9607
+genotype [17, 29, 30]
+Initializing network...
+val_loss_min:  0.1242
+val_acc_max:  0.9637
+genotype [30, 2, 18]
+Initializing network...
+val_loss_min:  0.6844
+val_acc_max:  0.7937
+genotype [19, 46, 3]
+Initializing network...
+val_loss_min:  0.1189
+val_acc_max:  0.9616
+genotype [19, 49, 17]
+Initializing network...
+val_loss_min:  0.121
+val_acc_max:  0.965
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [17, 39, 12], [19, 46, 11], [19, 46, 3], [19, 49, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [30, 34, 33]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1196, 0.1213, 0.1189, 0.121, 0.1238, 0.1238, 0.1265, 0.1274]
+min: 0.114, max:0.1274, avg:0.11634333333333338
+29 	9     	0.116343	0.00416659	0.114 	0.1274
+genotype [7, 25, 6]
+Initializing network...
+val_loss_min:  0.1427
+val_acc_max:  0.9567
+genotype [7, 13, 45]
+Initializing network...
+val_loss_min:  0.1538
+val_acc_max:  0.9516
+genotype [12, 31, 6]
+Initializing network...
+val_loss_min:  0.1151
+val_acc_max:  0.9656
+genotype [7, 31, 44]
+Initializing network...
+val_loss_min:  0.1352
+val_acc_max:  0.9631
+genotype [5, 31, 4]
+Initializing network...
+val_loss_min:  0.1456
+val_acc_max:  0.9601
+genotype [16, 31, 6]
+Initializing network...
+val_loss_min:  0.1212
+val_acc_max:  0.964
+genotype [7, 31, 30]
+Initializing network...
+val_loss_min:  0.1319
+val_acc_max:  0.9589
+genotype [30, 49, 6]
+Initializing network...
+val_loss_min:  0.133
+val_acc_max:  0.9604
+genotype [19, 46, 7]
+Initializing network...
+val_loss_min:  0.1294
+val_acc_max:  0.9595
+genotype [30, 8, 33]
+Initializing network...
+val_loss_min:  0.1763
+val_acc_max:  0.9424
+population saved
+population [[7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [7, 31, 6], [19, 46, 3], [19, 46, 11], [19, 46, 3], [19, 49, 17], [19, 46, 17], [19, 46, 17], [6, 34, 33], [30, 34, 33]]
+[0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.114, 0.1189, 0.1213, 0.1189, 0.121, 0.1238, 0.1238, 0.1265, 0.1274]
+min: 0.114, max:0.1274, avg:0.11632000000000003
+30 	10    	0.11632 	0.00415021	0.114 	0.1274
+pickle dump
+log saved
+Best individual:
+[7, 31, 6]
+Best individual is saved
+EA time:  15740.990981340408
+Evaluate the best individual
+Initializing network...
+val_loss_min:  0.1921
+val_acc_max:  0.9385
+output_classes [0 8 8 ... 0 7 5]
+y_true_test [0 8 8 ... 0 7 6]
+output_classes.shape (1221,)
+y_true_test.shape (1221,)
+accuracy of data_hp_1:  0.8771498771498771
+Initializing network...
+val_loss_min:  0.3809
+val_acc_max:  0.8664
+output_classes [2 6 1 ... 0 7 6]
+y_true_test [2 6 1 ... 0 7 6]
+output_classes.shape (1220,)
+y_true_test.shape (1220,)
+accuracy of data_hp_2:  0.7549180327868853
+Initializing network...
+val_loss_min:  0.2904
+val_acc_max:  0.9073
+output_classes [9 1 0 ... 0 7 6]
+y_true_test [9 1 0 ... 0 7 6]
+output_classes.shape (1224,)
+y_true_test.shape (1224,)
+accuracy of data_hp_3:  0.8014705882352942
+accuracies:  [0.8771498771498771, 0.7549180327868853, 0.8014705882352942]
+avg accuracy:  0.8111794993906857
