@@ -25,11 +25,11 @@ fault_7o_mat = os.path.join(fault_dir, '0.007-OuterRace6.mat')
 mat_list = [normal_mat, fault_7b_mat, fault_7i_mat, fault_7o_mat]
 mat_array_lst = []
 
-for mat_paht in mat_list :
-    print (normal_mat)
-    mat_dict = loadmat(fault_7o_mat)
+for mat_path in mat_list :
+    print (mat_path)
+    mat_dict = loadmat(mat_path)
     key = list(filter(lambda x: 'DE_time' in x, mat_dict.keys()))[0]
-    time_series = mat_dict[key][:400000, 0]
+    time_series = mat_dict[key][:450000, 0]
     print (time_series)
     print (time_series.shape)
     mat_array_lst.append (time_series)
